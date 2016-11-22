@@ -1,0 +1,15 @@
+MM: Read 32 bytes at 0xf700.
+Wrote to 0xf714: 852253060
+
+MM: Read 32 bytes at 0x100.
+Read from 0x104: 1716058372
+
+Read from 0xf714: 852253060
+
+*******************************************
+Write Hit Rate:		0% (0/1)
+Read Hit Rate:		50% (1/2)
+Total Hit Rate:		33% (1/3)
+Writes to Main Memory:	0
+Reads from Main Memory:	2
+*******************************************

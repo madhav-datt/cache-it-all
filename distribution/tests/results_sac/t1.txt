@@ -1,0 +1,10 @@
+MM: Read 32 bytes at 0x79a0.
+Read from 0x79b0: 1116170287
+
+*******************************************
+Write Hit Rate:		nan% (0/0)
+Read Hit Rate:		0% (0/1)
+Total Hit Rate:		0% (0/1)
+Writes to Main Memory:	0
+Reads from Main Memory:	1
+*******************************************

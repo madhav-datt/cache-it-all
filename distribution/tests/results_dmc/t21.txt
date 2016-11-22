@@ -1,0 +1,187 @@
+MM: Read 32 bytes at 0x8200.
+Wrote to 0x821c: -1190607851
+
+MM: Read 32 bytes at 0xe700.
+Wrote to 0xe710: -111505617
+
+MM: Wrote 32 bytes at 0xe700.
+MM: Read 32 bytes at 0x7700.
+Read from 0x7708: 1299345485
+
+Wrote to 0x8218: -1682908392
+
+MM: Read 32 bytes at 0xe700.
+Wrote to 0xe718: -1273958109
+
+MM: Wrote 32 bytes at 0xe700.
+MM: Read 32 bytes at 0x7700.
+Wrote to 0x770c: -1662419603
+
+Read from 0x820c: -1769231607
+
+MM: Wrote 32 bytes at 0x7700.
+MM: Read 32 bytes at 0xe700.
+Wrote to 0xe70c: 405292570
+
+MM: Wrote 32 bytes at 0xe700.
+MM: Read 32 bytes at 0x7700.
+Read from 0x770c: -1662419603
+
+Wrote to 0x8208: -891522135
+
+MM: Read 32 bytes at 0xe700.
+Read from 0xe714: -1344069007
+
+MM: Read 32 bytes at 0x7700.
+Read from 0x7704: 663925858
+
+Wrote to 0x8204: -15536822
+
+MM: Read 32 bytes at 0xe700.
+Read from 0xe714: -1344069007
+
+MM: Read 32 bytes at 0x7700.
+Wrote to 0x770c: -1463807076
+
+Read from 0x8214: -2024222877
+
+MM: Wrote 32 bytes at 0x7700.
+MM: Read 32 bytes at 0xe700.
+Read from 0xe718: -1273958109
+
+MM: Read 32 bytes at 0x7700.
+Read from 0x7704: 663925858
+
+Read from 0x820c: -1769231607
+
+MM: Read 32 bytes at 0xe700.
+Wrote to 0xe718: 1292056281
+
+MM: Wrote 32 bytes at 0xe700.
+MM: Read 32 bytes at 0x7700.
+Read from 0x7700: -564956095
+
+Read from 0x8210: 1403641255
+
+MM: Read 32 bytes at 0xe700.
+Read from 0xe704: -202506338
+
+MM: Read 32 bytes at 0x7700.
+Read from 0x770c: -1463807076
+
+Wrote to 0x821c: 276162357
+
+MM: Read 32 bytes at 0xe700.
+Wrote to 0xe70c: 2006383668
+
+MM: Wrote 32 bytes at 0xe700.
+MM: Read 32 bytes at 0x7700.
+Read from 0x7718: 1603167316
+
+Wrote to 0x8200: -1725736856
+
+MM: Read 32 bytes at 0xe700.
+Wrote to 0xe710: -787580575
+
+MM: Wrote 32 bytes at 0xe700.
+MM: Read 32 bytes at 0x7700.
+Wrote to 0x7714: -945151094
+
+Wrote to 0x821c: 889473274
+
+MM: Wrote 32 bytes at 0x7700.
+MM: Read 32 bytes at 0xe700.
+Read from 0xe714: -1344069007
+
+MM: Read 32 bytes at 0x7700.
+Read from 0x7714: -945151094
+
+Wrote to 0x8214: 934948332
+
+MM: Read 32 bytes at 0xe700.
+Wrote to 0xe708: 1306221965
+
+MM: Wrote 32 bytes at 0xe700.
+MM: Read 32 bytes at 0x7700.
+Read from 0x771c: -377686237
+
+Read from 0x821c: 889473274
+
+MM: Read 32 bytes at 0xe700.
+Read from 0xe718: 1292056281
+
+MM: Read 32 bytes at 0x7700.
+Read from 0x7714: -945151094
+
+Read from 0x8200: -1725736856
+
+MM: Read 32 bytes at 0xe700.
+Wrote to 0xe70c: -706939898
+
+MM: Wrote 32 bytes at 0xe700.
+MM: Read 32 bytes at 0x7700.
+Read from 0x7710: -2013129733
+
+Read from 0x821c: 889473274
+
+MM: Read 32 bytes at 0xe700.
+Wrote to 0xe710: 3023849
+
+MM: Wrote 32 bytes at 0xe700.
+MM: Read 32 bytes at 0x7700.
+Read from 0x7714: -945151094
+
+Wrote to 0x8218: -659166920
+
+MM: Read 32 bytes at 0xe700.
+Wrote to 0xe704: -2111217567
+
+MM: Wrote 32 bytes at 0xe700.
+MM: Read 32 bytes at 0x7700.
+Wrote to 0x7700: -1757810823
+
+Read from 0x8218: -659166920
+
+MM: Wrote 32 bytes at 0x7700.
+MM: Read 32 bytes at 0xe700.
+Wrote to 0xe708: -1190390193
+
+MM: Wrote 32 bytes at 0xe700.
+MM: Read 32 bytes at 0x7700.
+Read from 0x7710: -2013129733
+
+Read from 0x8218: -659166920
+
+MM: Read 32 bytes at 0xe700.
+Wrote to 0xe710: -1724018134
+
+MM: Wrote 32 bytes at 0xe700.
+MM: Read 32 bytes at 0x7700.
+Wrote to 0x7704: -998332002
+
+Wrote to 0x8214: 1253251784
+
+MM: Wrote 32 bytes at 0x7700.
+MM: Read 32 bytes at 0xe700.
+Wrote to 0xe700: -1323386523
+
+MM: Wrote 32 bytes at 0xe700.
+MM: Read 32 bytes at 0x7700.
+Wrote to 0x7708: 96139535
+
+Read from 0x820c: -1769231607
+
+MM: Wrote 32 bytes at 0x7700.
+MM: Read 32 bytes at 0xe700.
+Read from 0xe718: 1292056281
+
+MM: Read 32 bytes at 0x7700.
+Read from 0x7710: -2013129733
+
+*******************************************
+Write Hit Rate:		31% (9/29)
+Read Hit Rate:		32% (10/31)
+Total Hit Rate:		32% (19/60)
+Writes to Main Memory:	19
+Reads from Main Memory:	41
+*******************************************

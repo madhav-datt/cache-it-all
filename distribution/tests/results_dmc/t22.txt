@@ -1,0 +1,19 @@
+MM: Read 32 bytes at 0x0.
+Read from 0x4: 1037588349
+
+MM: Read 32 bytes at 0x60.
+Read from 0x64: -1126779786
+
+Wrote to 0x64: -4
+
+Read from 0x4: 1037588349
+
+Read from 0x64: -4
+
+*******************************************
+Write Hit Rate:		100% (1/1)
+Read Hit Rate:		50% (2/4)
+Total Hit Rate:		60% (3/5)
+Writes to Main Memory:	0
+Reads from Main Memory:	2
+*******************************************

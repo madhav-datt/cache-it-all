@@ -1,0 +1,18 @@
+MM: Read 32 bytes at 0x1940.
+MM: Wrote 32 bytes at 0x1940.
+Wrote to 0x1954: -655044676
+
+MM: Read 32 bytes at 0xc340.
+MM: Wrote 32 bytes at 0xc340.
+Wrote to 0xc34c: 1625322250
+
+MM: Read 32 bytes at 0xa940.
+Read from 0xa944: 2143619335
+
+*******************************************
+Write Hit Rate:		0% (0/2)
+Read Hit Rate:		0% (0/1)
+Total Hit Rate:		0% (0/3)
+Writes to Main Memory:	2
+Reads from Main Memory:	3
+*******************************************

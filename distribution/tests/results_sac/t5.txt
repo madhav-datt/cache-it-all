@@ -1,0 +1,14 @@
+MM: Read 32 bytes at 0xe440.
+Wrote to 0xe458: 1856696116
+
+Wrote to 0xe458: -757304984
+
+Read from 0xe458: -757304984
+
+*******************************************
+Write Hit Rate:		50% (1/2)
+Read Hit Rate:		100% (1/1)
+Total Hit Rate:		67% (2/3)
+Writes to Main Memory:	0
+Reads from Main Memory:	1
+*******************************************

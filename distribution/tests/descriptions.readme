@@ -1,0 +1,45 @@
+1   R (correct mm_init.data value returned)
+2   RR (same value each time)
+3   WR (same value read as written)
+4   RWR (value changes from initial value to written value)
+5   WWR (value read matches second write)
+6d
+6f
+6s  Reads and writes s.t. no eviction occurs
+7d
+7f
+7s  Reads and writes s.t. eviction occurs every time
+8d
+8f
+8s  Reads and writes s.t. eviction occurs only during second half
+9f
+9s  Reads and writes s.t. we confirm we are using LRU, not FIFO
+10d
+10f
+10s RE (wb does not occur)
+11d
+11f
+11s WE (wb occurs)
+12d
+12f
+12s RER (same value read both times)
+13d
+13f
+13s WRE (wb occurs)
+14d
+14f
+14s WER (same value read as written)
+15  Ascending RW, then descending R
+16  Ascending RW, then ascending R
+17d
+17f
+17s WER lowest word
+18d
+18f
+18s WER highest word
+19  Strided (stride of 16 mbs) test that only accesses 16 mbs
+20  Repeats through same 17 mbs
+21  Strided (stride of 8 mbs) test that repeats through 3 mbs
+22  Random #1
+23  Random #2
+24  Random #3

@@ -1,0 +1,20 @@
+MM: Read 32 bytes at 0xffe0.
+MM: Wrote 32 bytes at 0xffe0.
+Wrote to 0xfffc: 1944173777
+
+MM: Read 32 bytes at 0x1ee0.
+Read from 0x1ee0: 1406924019
+
+MM: Read 32 bytes at 0x54e0.
+Read from 0x54e8: 1066177736
+
+MM: Read 32 bytes at 0xffe0.
+Read from 0xfffc: 1944173777
+
+*******************************************
+Write Hit Rate:		0% (0/1)
+Read Hit Rate:		0% (0/3)
+Total Hit Rate:		0% (0/4)
+Writes to Main Memory:	1
+Reads from Main Memory:	4
+*******************************************

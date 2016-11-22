@@ -1,0 +1,32 @@
+MM: Read 32 bytes at 0x4180.
+Wrote to 0x419c: -49
+
+MM: Read 32 bytes at 0x2fa0.
+Read from 0x2fb0: -1880966825
+
+MM: Read 32 bytes at 0xafa0.
+Wrote to 0xafa0: -48
+
+Read from 0x2fb0: -1880966825
+
+Read from 0x2fb8: -393989895
+
+Read from 0xafa8: -325158668
+
+MM: Read 32 bytes at 0xe960.
+Wrote to 0xe960: -54
+
+MM: Read 32 bytes at 0xbae0.
+Wrote to 0xbaec: 6
+
+Read from 0x2fb4: -215309017
+
+Wrote to 0xbaec: -66
+
+*******************************************
+Write Hit Rate:		20% (1/5)
+Read Hit Rate:		80% (4/5)
+Total Hit Rate:		50% (5/10)
+Writes to Main Memory:	0
+Reads from Main Memory:	5
+*******************************************

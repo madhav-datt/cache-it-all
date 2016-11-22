@@ -1,0 +1,12 @@
+MM: Read 32 bytes at 0xc260.
+Read from 0xc264: -1882520528
+
+Read from 0xc264: -1882520528
+
+*******************************************
+Write Hit Rate:		nan% (0/0)
+Read Hit Rate:		50% (1/2)
+Total Hit Rate:		50% (1/2)
+Writes to Main Memory:	0
+Reads from Main Memory:	1
+*******************************************

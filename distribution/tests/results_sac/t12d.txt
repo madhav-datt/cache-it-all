@@ -1,0 +1,15 @@
+MM: Read 32 bytes at 0xdc80.
+Read from 0xdc94: -1427229689
+
+MM: Read 32 bytes at 0x8a80.
+Wrote to 0x8a9c: -684815078
+
+Read from 0xdc94: -1427229689
+
+*******************************************
+Write Hit Rate:		0% (0/1)
+Read Hit Rate:		50% (1/2)
+Total Hit Rate:		33% (1/3)
+Writes to Main Memory:	0
+Reads from Main Memory:	2
+*******************************************

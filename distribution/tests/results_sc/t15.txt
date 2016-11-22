@@ -1,0 +1,849 @@
+MM: Read 32 bytes at 0xed80.
+Read from 0xed98: 475235665
+
+MM: Read 32 bytes at 0xed80.
+MM: Wrote 32 bytes at 0xed80.
+Wrote to 0xed9c: -1195024245
+
+MM: Read 32 bytes at 0xeda0.
+MM: Wrote 32 bytes at 0xeda0.
+Wrote to 0xeda0: -385424985
+
+MM: Read 32 bytes at 0xeda0.
+Read from 0xeda4: 954281702
+
+MM: Read 32 bytes at 0xeda0.
+Read from 0xeda8: 1925787846
+
+MM: Read 32 bytes at 0xeda0.
+Read from 0xedac: 953724224
+
+MM: Read 32 bytes at 0xeda0.
+MM: Wrote 32 bytes at 0xeda0.
+Wrote to 0xedb0: -1508752469
+
+MM: Read 32 bytes at 0xeda0.
+Read from 0xedb4: 932131972
+
+MM: Read 32 bytes at 0xeda0.
+MM: Wrote 32 bytes at 0xeda0.
+Wrote to 0xedb8: 94975538
+
+MM: Read 32 bytes at 0xeda0.
+Read from 0xedbc: -397705428
+
+MM: Read 32 bytes at 0xedc0.
+Read from 0xedc0: -1240796816
+
+MM: Read 32 bytes at 0xedc0.
+Read from 0xedc4: 1549571101
+
+MM: Read 32 bytes at 0xedc0.
+Read from 0xedc8: 1935649014
+
+MM: Read 32 bytes at 0xedc0.
+Read from 0xedcc: -747065101
+
+MM: Read 32 bytes at 0xedc0.
+Read from 0xedd0: 868049095
+
+MM: Read 32 bytes at 0xedc0.
+MM: Wrote 32 bytes at 0xedc0.
+Wrote to 0xedd4: -1997833139
+
+MM: Read 32 bytes at 0xedc0.
+Read from 0xedd8: 511434839
+
+MM: Read 32 bytes at 0xedc0.
+MM: Wrote 32 bytes at 0xedc0.
+Wrote to 0xeddc: -454703030
+
+MM: Read 32 bytes at 0xede0.
+Read from 0xede0: 1648755322
+
+MM: Read 32 bytes at 0xede0.
+Read from 0xede4: 1504338702
+
+MM: Read 32 bytes at 0xede0.
+MM: Wrote 32 bytes at 0xede0.
+Wrote to 0xede8: 1130857300
+
+MM: Read 32 bytes at 0xede0.
+Read from 0xedec: 466093282
+
+MM: Read 32 bytes at 0xede0.
+Read from 0xedf0: 1990075866
+
+MM: Read 32 bytes at 0xede0.
+Read from 0xedf4: 1334855240
+
+MM: Read 32 bytes at 0xede0.
+MM: Wrote 32 bytes at 0xede0.
+Wrote to 0xedf8: 138252352
+
+MM: Read 32 bytes at 0xede0.
+MM: Wrote 32 bytes at 0xede0.
+Wrote to 0xedfc: 1647004822
+
+MM: Read 32 bytes at 0xee00.
+Read from 0xee00: -1119952667
+
+MM: Read 32 bytes at 0xee00.
+MM: Wrote 32 bytes at 0xee00.
+Wrote to 0xee04: 10069325
+
+MM: Read 32 bytes at 0xee00.
+Read from 0xee08: 1457167006
+
+MM: Read 32 bytes at 0xee00.
+MM: Wrote 32 bytes at 0xee00.
+Wrote to 0xee0c: 337561372
+
+MM: Read 32 bytes at 0xee00.
+Read from 0xee10: 179007629
+
+MM: Read 32 bytes at 0xee00.
+Read from 0xee14: 857933564
+
+MM: Read 32 bytes at 0xee00.
+MM: Wrote 32 bytes at 0xee00.
+Wrote to 0xee18: 1264490922
+
+MM: Read 32 bytes at 0xee00.
+Read from 0xee1c: -544674886
+
+MM: Read 32 bytes at 0xee20.
+Read from 0xee20: -332572808
+
+MM: Read 32 bytes at 0xee20.
+MM: Wrote 32 bytes at 0xee20.
+Wrote to 0xee24: 995290068
+
+MM: Read 32 bytes at 0xee20.
+Read from 0xee28: -1591063807
+
+MM: Read 32 bytes at 0xee20.
+MM: Wrote 32 bytes at 0xee20.
+Wrote to 0xee2c: 1143980901
+
+MM: Read 32 bytes at 0xee20.
+Read from 0xee30: 702132747
+
+MM: Read 32 bytes at 0xee20.
+Read from 0xee34: -564885826
+
+MM: Read 32 bytes at 0xee20.
+Read from 0xee38: 1555631631
+
+MM: Read 32 bytes at 0xee20.
+Read from 0xee3c: -1310457833
+
+MM: Read 32 bytes at 0xee40.
+Read from 0xee40: 390944669
+
+MM: Read 32 bytes at 0xee40.
+Read from 0xee44: -766144647
+
+MM: Read 32 bytes at 0xee40.
+Read from 0xee48: -1605104225
+
+MM: Read 32 bytes at 0xee40.
+Read from 0xee4c: 2067263224
+
+MM: Read 32 bytes at 0xee40.
+Read from 0xee50: 128162647
+
+MM: Read 32 bytes at 0xee40.
+MM: Wrote 32 bytes at 0xee40.
+Wrote to 0xee54: -1738033170
+
+MM: Read 32 bytes at 0xee40.
+MM: Wrote 32 bytes at 0xee40.
+Wrote to 0xee58: 1662058316
+
+MM: Read 32 bytes at 0xee40.
+MM: Wrote 32 bytes at 0xee40.
+Wrote to 0xee5c: -340450425
+
+MM: Read 32 bytes at 0xee60.
+MM: Wrote 32 bytes at 0xee60.
+Wrote to 0xee60: -396495218
+
+MM: Read 32 bytes at 0xee60.
+MM: Wrote 32 bytes at 0xee60.
+Wrote to 0xee64: -1297078309
+
+MM: Read 32 bytes at 0xee60.
+MM: Wrote 32 bytes at 0xee60.
+Wrote to 0xee68: -144884729
+
+MM: Read 32 bytes at 0xee60.
+Read from 0xee6c: -210424554
+
+MM: Read 32 bytes at 0xee60.
+Read from 0xee70: -753923495
+
+MM: Read 32 bytes at 0xee60.
+Read from 0xee74: 1642282270
+
+MM: Read 32 bytes at 0xee60.
+Read from 0xee78: -155077143
+
+MM: Read 32 bytes at 0xee60.
+Read from 0xee7c: -335961384
+
+MM: Read 32 bytes at 0xee80.
+MM: Wrote 32 bytes at 0xee80.
+Wrote to 0xee80: 1429643244
+
+MM: Read 32 bytes at 0xee80.
+Read from 0xee84: -1364105586
+
+MM: Read 32 bytes at 0xee80.
+Read from 0xee88: 1416832414
+
+MM: Read 32 bytes at 0xee80.
+MM: Wrote 32 bytes at 0xee80.
+Wrote to 0xee8c: -660932877
+
+MM: Read 32 bytes at 0xee80.
+MM: Wrote 32 bytes at 0xee80.
+Wrote to 0xee90: 251482399
+
+MM: Read 32 bytes at 0xee80.
+MM: Wrote 32 bytes at 0xee80.
+Wrote to 0xee94: -1913540715
+
+MM: Read 32 bytes at 0xee80.
+Read from 0xee98: 1561311679
+
+MM: Read 32 bytes at 0xee80.
+MM: Wrote 32 bytes at 0xee80.
+Wrote to 0xee9c: 1902446103
+
+MM: Read 32 bytes at 0xeea0.
+Read from 0xeea0: 1946688994
+
+MM: Read 32 bytes at 0xeea0.
+MM: Wrote 32 bytes at 0xeea0.
+Wrote to 0xeea4: -86635104
+
+MM: Read 32 bytes at 0xeea0.
+Read from 0xeea8: 1291291449
+
+MM: Read 32 bytes at 0xeea0.
+MM: Wrote 32 bytes at 0xeea0.
+Wrote to 0xeeac: -1944965748
+
+MM: Read 32 bytes at 0xeea0.
+Read from 0xeeb0: -239844126
+
+MM: Read 32 bytes at 0xeea0.
+Read from 0xeeb4: 1312829184
+
+MM: Read 32 bytes at 0xeea0.
+Read from 0xeeb8: 510681218
+
+MM: Read 32 bytes at 0xeea0.
+MM: Wrote 32 bytes at 0xeea0.
+Wrote to 0xeebc: 1697345299
+
+MM: Read 32 bytes at 0xeec0.
+MM: Wrote 32 bytes at 0xeec0.
+Wrote to 0xeec0: 1892119061
+
+MM: Read 32 bytes at 0xeec0.
+MM: Wrote 32 bytes at 0xeec0.
+Wrote to 0xeec4: 324340562
+
+MM: Read 32 bytes at 0xeec0.
+Read from 0xeec8: -190228438
+
+MM: Read 32 bytes at 0xeec0.
+Read from 0xeecc: 484697718
+
+MM: Read 32 bytes at 0xeec0.
+MM: Wrote 32 bytes at 0xeec0.
+Wrote to 0xeed0: 1018621339
+
+MM: Read 32 bytes at 0xeec0.
+Read from 0xeed4: -441480914
+
+MM: Read 32 bytes at 0xeec0.
+Read from 0xeed8: -1410664894
+
+MM: Read 32 bytes at 0xeec0.
+MM: Wrote 32 bytes at 0xeec0.
+Wrote to 0xeedc: -1202914037
+
+MM: Read 32 bytes at 0xeee0.
+Read from 0xeee0: 393036095
+
+MM: Read 32 bytes at 0xeee0.
+Read from 0xeee4: 602741698
+
+MM: Read 32 bytes at 0xeee0.
+MM: Wrote 32 bytes at 0xeee0.
+Wrote to 0xeee8: -310709029
+
+MM: Read 32 bytes at 0xeee0.
+Read from 0xeeec: 942034529
+
+MM: Read 32 bytes at 0xeee0.
+Read from 0xeef0: 736633766
+
+MM: Read 32 bytes at 0xeee0.
+Read from 0xeef4: -828046520
+
+MM: Read 32 bytes at 0xeee0.
+MM: Wrote 32 bytes at 0xeee0.
+Wrote to 0xeef8: 1536646338
+
+MM: Read 32 bytes at 0xeee0.
+Read from 0xeefc: 1381775769
+
+MM: Read 32 bytes at 0xef00.
+Read from 0xef00: 2107457569
+
+MM: Read 32 bytes at 0xef00.
+MM: Wrote 32 bytes at 0xef00.
+Wrote to 0xef04: -409481891
+
+MM: Read 32 bytes at 0xef00.
+MM: Wrote 32 bytes at 0xef00.
+Wrote to 0xef08: 827416093
+
+MM: Read 32 bytes at 0xef00.
+Read from 0xef0c: -488894338
+
+MM: Read 32 bytes at 0xef00.
+MM: Wrote 32 bytes at 0xef00.
+Wrote to 0xef10: 241588046
+
+MM: Read 32 bytes at 0xef00.
+MM: Wrote 32 bytes at 0xef00.
+Wrote to 0xef14: 1260209385
+
+MM: Read 32 bytes at 0xef00.
+MM: Wrote 32 bytes at 0xef00.
+Wrote to 0xef18: -891143474
+
+MM: Read 32 bytes at 0xef00.
+Read from 0xef1c: -771844057
+
+MM: Read 32 bytes at 0xef20.
+Read from 0xef20: 1327841692
+
+MM: Read 32 bytes at 0xef20.
+Read from 0xef24: 652227682
+
+MM: Read 32 bytes at 0xef20.
+MM: Wrote 32 bytes at 0xef20.
+Wrote to 0xef28: -1825039644
+
+MM: Read 32 bytes at 0xef20.
+MM: Wrote 32 bytes at 0xef20.
+Wrote to 0xef2c: 1577122585
+
+MM: Read 32 bytes at 0xef20.
+Read from 0xef30: -1686842922
+
+MM: Read 32 bytes at 0xef20.
+MM: Wrote 32 bytes at 0xef20.
+Wrote to 0xef34: 508836257
+
+MM: Read 32 bytes at 0xef20.
+MM: Wrote 32 bytes at 0xef20.
+Wrote to 0xef38: -214887961
+
+MM: Read 32 bytes at 0xef20.
+Read from 0xef3c: -1598586640
+
+MM: Read 32 bytes at 0xef40.
+MM: Wrote 32 bytes at 0xef40.
+Wrote to 0xef40: -2137952563
+
+MM: Read 32 bytes at 0xef40.
+MM: Wrote 32 bytes at 0xef40.
+Wrote to 0xef44: 1034183797
+
+MM: Read 32 bytes at 0xef40.
+MM: Wrote 32 bytes at 0xef40.
+Wrote to 0xef48: 646983685
+
+MM: Read 32 bytes at 0xef40.
+Read from 0xef4c: 837945890
+
+MM: Read 32 bytes at 0xef40.
+MM: Wrote 32 bytes at 0xef40.
+Wrote to 0xef50: -360722232
+
+MM: Read 32 bytes at 0xef40.
+MM: Wrote 32 bytes at 0xef40.
+Wrote to 0xef54: -1601708169
+
+MM: Read 32 bytes at 0xef40.
+Read from 0xef58: -912494305
+
+MM: Read 32 bytes at 0xef40.
+Read from 0xef5c: 1982280150
+
+MM: Read 32 bytes at 0xef60.
+MM: Wrote 32 bytes at 0xef60.
+Wrote to 0xef60: 516088771
+
+MM: Read 32 bytes at 0xef60.
+Read from 0xef64: 1197579885
+
+MM: Read 32 bytes at 0xef60.
+Read from 0xef68: -478779467
+
+MM: Read 32 bytes at 0xef60.
+MM: Wrote 32 bytes at 0xef60.
+Wrote to 0xef6c: -1434778929
+
+MM: Read 32 bytes at 0xef60.
+Read from 0xef70: -1327191258
+
+MM: Read 32 bytes at 0xef60.
+Read from 0xef74: -1286342071
+
+MM: Read 32 bytes at 0xef60.
+MM: Wrote 32 bytes at 0xef60.
+Wrote to 0xef78: 1145472726
+
+MM: Read 32 bytes at 0xef60.
+Read from 0xef7c: 1005757365
+
+MM: Read 32 bytes at 0xef80.
+MM: Wrote 32 bytes at 0xef80.
+Wrote to 0xef80: -2089537565
+
+MM: Read 32 bytes at 0xef80.
+MM: Wrote 32 bytes at 0xef80.
+Wrote to 0xef84: 1323038895
+
+MM: Read 32 bytes at 0xef80.
+Read from 0xef88: 1783027102
+
+MM: Read 32 bytes at 0xef80.
+MM: Wrote 32 bytes at 0xef80.
+Wrote to 0xef8c: 798105975
+
+MM: Read 32 bytes at 0xef80.
+Read from 0xef90: 2090719458
+
+MM: Read 32 bytes at 0xef80.
+Read from 0xef94: 480591512
+
+MM: Read 32 bytes at 0xef80.
+Read from 0xef98: 748924010
+
+MM: Read 32 bytes at 0xef80.
+MM: Wrote 32 bytes at 0xef80.
+Wrote to 0xef9c: 1114546716
+
+MM: Read 32 bytes at 0xefa0.
+MM: Wrote 32 bytes at 0xefa0.
+Wrote to 0xefa0: -1088843092
+
+MM: Read 32 bytes at 0xefa0.
+Read from 0xefa0: -1088843092
+
+MM: Read 32 bytes at 0xef80.
+Read from 0xef9c: 1114546716
+
+MM: Read 32 bytes at 0xef80.
+Read from 0xef98: 748924010
+
+MM: Read 32 bytes at 0xef80.
+Read from 0xef94: 480591512
+
+MM: Read 32 bytes at 0xef80.
+Read from 0xef90: 2090719458
+
+MM: Read 32 bytes at 0xef80.
+Read from 0xef8c: 798105975
+
+MM: Read 32 bytes at 0xef80.
+Read from 0xef88: 1783027102
+
+MM: Read 32 bytes at 0xef80.
+Read from 0xef84: 1323038895
+
+MM: Read 32 bytes at 0xef80.
+Read from 0xef80: -2089537565
+
+MM: Read 32 bytes at 0xef60.
+Read from 0xef7c: 1005757365
+
+MM: Read 32 bytes at 0xef60.
+Read from 0xef78: 1145472726
+
+MM: Read 32 bytes at 0xef60.
+Read from 0xef74: -1286342071
+
+MM: Read 32 bytes at 0xef60.
+Read from 0xef70: -1327191258
+
+MM: Read 32 bytes at 0xef60.
+Read from 0xef6c: -1434778929
+
+MM: Read 32 bytes at 0xef60.
+Read from 0xef68: -478779467
+
+MM: Read 32 bytes at 0xef60.
+Read from 0xef64: 1197579885
+
+MM: Read 32 bytes at 0xef60.
+Read from 0xef60: 516088771
+
+MM: Read 32 bytes at 0xef40.
+Read from 0xef5c: 1982280150
+
+MM: Read 32 bytes at 0xef40.
+Read from 0xef58: -912494305
+
+MM: Read 32 bytes at 0xef40.
+Read from 0xef54: -1601708169
+
+MM: Read 32 bytes at 0xef40.
+Read from 0xef50: -360722232
+
+MM: Read 32 bytes at 0xef40.
+Read from 0xef4c: 837945890
+
+MM: Read 32 bytes at 0xef40.
+Read from 0xef48: 646983685
+
+MM: Read 32 bytes at 0xef40.
+Read from 0xef44: 1034183797
+
+MM: Read 32 bytes at 0xef40.
+Read from 0xef40: -2137952563
+
+MM: Read 32 bytes at 0xef20.
+Read from 0xef3c: -1598586640
+
+MM: Read 32 bytes at 0xef20.
+Read from 0xef38: -214887961
+
+MM: Read 32 bytes at 0xef20.
+Read from 0xef34: 508836257
+
+MM: Read 32 bytes at 0xef20.
+Read from 0xef30: -1686842922
+
+MM: Read 32 bytes at 0xef20.
+Read from 0xef2c: 1577122585
+
+MM: Read 32 bytes at 0xef20.
+Read from 0xef28: -1825039644
+
+MM: Read 32 bytes at 0xef20.
+Read from 0xef24: 652227682
+
+MM: Read 32 bytes at 0xef20.
+Read from 0xef20: 1327841692
+
+MM: Read 32 bytes at 0xef00.
+Read from 0xef1c: -771844057
+
+MM: Read 32 bytes at 0xef00.
+Read from 0xef18: -891143474
+
+MM: Read 32 bytes at 0xef00.
+Read from 0xef14: 1260209385
+
+MM: Read 32 bytes at 0xef00.
+Read from 0xef10: 241588046
+
+MM: Read 32 bytes at 0xef00.
+Read from 0xef0c: -488894338
+
+MM: Read 32 bytes at 0xef00.
+Read from 0xef08: 827416093
+
+MM: Read 32 bytes at 0xef00.
+Read from 0xef04: -409481891
+
+MM: Read 32 bytes at 0xef00.
+Read from 0xef00: 2107457569
+
+MM: Read 32 bytes at 0xeee0.
+Read from 0xeefc: 1381775769
+
+MM: Read 32 bytes at 0xeee0.
+Read from 0xeef8: 1536646338
+
+MM: Read 32 bytes at 0xeee0.
+Read from 0xeef4: -828046520
+
+MM: Read 32 bytes at 0xeee0.
+Read from 0xeef0: 736633766
+
+MM: Read 32 bytes at 0xeee0.
+Read from 0xeeec: 942034529
+
+MM: Read 32 bytes at 0xeee0.
+Read from 0xeee8: -310709029
+
+MM: Read 32 bytes at 0xeee0.
+Read from 0xeee4: 602741698
+
+MM: Read 32 bytes at 0xeee0.
+Read from 0xeee0: 393036095
+
+MM: Read 32 bytes at 0xeec0.
+Read from 0xeedc: -1202914037
+
+MM: Read 32 bytes at 0xeec0.
+Read from 0xeed8: -1410664894
+
+MM: Read 32 bytes at 0xeec0.
+Read from 0xeed4: -441480914
+
+MM: Read 32 bytes at 0xeec0.
+Read from 0xeed0: 1018621339
+
+MM: Read 32 bytes at 0xeec0.
+Read from 0xeecc: 484697718
+
+MM: Read 32 bytes at 0xeec0.
+Read from 0xeec8: -190228438
+
+MM: Read 32 bytes at 0xeec0.
+Read from 0xeec4: 324340562
+
+MM: Read 32 bytes at 0xeec0.
+Read from 0xeec0: 1892119061
+
+MM: Read 32 bytes at 0xeea0.
+Read from 0xeebc: 1697345299
+
+MM: Read 32 bytes at 0xeea0.
+Read from 0xeeb8: 510681218
+
+MM: Read 32 bytes at 0xeea0.
+Read from 0xeeb4: 1312829184
+
+MM: Read 32 bytes at 0xeea0.
+Read from 0xeeb0: -239844126
+
+MM: Read 32 bytes at 0xeea0.
+Read from 0xeeac: -1944965748
+
+MM: Read 32 bytes at 0xeea0.
+Read from 0xeea8: 1291291449
+
+MM: Read 32 bytes at 0xeea0.
+Read from 0xeea4: -86635104
+
+MM: Read 32 bytes at 0xeea0.
+Read from 0xeea0: 1946688994
+
+MM: Read 32 bytes at 0xee80.
+Read from 0xee9c: 1902446103
+
+MM: Read 32 bytes at 0xee80.
+Read from 0xee98: 1561311679
+
+MM: Read 32 bytes at 0xee80.
+Read from 0xee94: -1913540715
+
+MM: Read 32 bytes at 0xee80.
+Read from 0xee90: 251482399
+
+MM: Read 32 bytes at 0xee80.
+Read from 0xee8c: -660932877
+
+MM: Read 32 bytes at 0xee80.
+Read from 0xee88: 1416832414
+
+MM: Read 32 bytes at 0xee80.
+Read from 0xee84: -1364105586
+
+MM: Read 32 bytes at 0xee80.
+Read from 0xee80: 1429643244
+
+MM: Read 32 bytes at 0xee60.
+Read from 0xee7c: -335961384
+
+MM: Read 32 bytes at 0xee60.
+Read from 0xee78: -155077143
+
+MM: Read 32 bytes at 0xee60.
+Read from 0xee74: 1642282270
+
+MM: Read 32 bytes at 0xee60.
+Read from 0xee70: -753923495
+
+MM: Read 32 bytes at 0xee60.
+Read from 0xee6c: -210424554
+
+MM: Read 32 bytes at 0xee60.
+Read from 0xee68: -144884729
+
+MM: Read 32 bytes at 0xee60.
+Read from 0xee64: -1297078309
+
+MM: Read 32 bytes at 0xee60.
+Read from 0xee60: -396495218
+
+MM: Read 32 bytes at 0xee40.
+Read from 0xee5c: -340450425
+
+MM: Read 32 bytes at 0xee40.
+Read from 0xee58: 1662058316
+
+MM: Read 32 bytes at 0xee40.
+Read from 0xee54: -1738033170
+
+MM: Read 32 bytes at 0xee40.
+Read from 0xee50: 128162647
+
+MM: Read 32 bytes at 0xee40.
+Read from 0xee4c: 2067263224
+
+MM: Read 32 bytes at 0xee40.
+Read from 0xee48: -1605104225
+
+MM: Read 32 bytes at 0xee40.
+Read from 0xee44: -766144647
+
+MM: Read 32 bytes at 0xee40.
+Read from 0xee40: 390944669
+
+MM: Read 32 bytes at 0xee20.
+Read from 0xee3c: -1310457833
+
+MM: Read 32 bytes at 0xee20.
+Read from 0xee38: 1555631631
+
+MM: Read 32 bytes at 0xee20.
+Read from 0xee34: -564885826
+
+MM: Read 32 bytes at 0xee20.
+Read from 0xee30: 702132747
+
+MM: Read 32 bytes at 0xee20.
+Read from 0xee2c: 1143980901
+
+MM: Read 32 bytes at 0xee20.
+Read from 0xee28: -1591063807
+
+MM: Read 32 bytes at 0xee20.
+Read from 0xee24: 995290068
+
+MM: Read 32 bytes at 0xee20.
+Read from 0xee20: -332572808
+
+MM: Read 32 bytes at 0xee00.
+Read from 0xee1c: -544674886
+
+MM: Read 32 bytes at 0xee00.
+Read from 0xee18: 1264490922
+
+MM: Read 32 bytes at 0xee00.
+Read from 0xee14: 857933564
+
+MM: Read 32 bytes at 0xee00.
+Read from 0xee10: 179007629
+
+MM: Read 32 bytes at 0xee00.
+Read from 0xee0c: 337561372
+
+MM: Read 32 bytes at 0xee00.
+Read from 0xee08: 1457167006
+
+MM: Read 32 bytes at 0xee00.
+Read from 0xee04: 10069325
+
+MM: Read 32 bytes at 0xee00.
+Read from 0xee00: -1119952667
+
+MM: Read 32 bytes at 0xede0.
+Read from 0xedfc: 1647004822
+
+MM: Read 32 bytes at 0xede0.
+Read from 0xedf8: 138252352
+
+MM: Read 32 bytes at 0xede0.
+Read from 0xedf4: 1334855240
+
+MM: Read 32 bytes at 0xede0.
+Read from 0xedf0: 1990075866
+
+MM: Read 32 bytes at 0xede0.
+Read from 0xedec: 466093282
+
+MM: Read 32 bytes at 0xede0.
+Read from 0xede8: 1130857300
+
+MM: Read 32 bytes at 0xede0.
+Read from 0xede4: 1504338702
+
+MM: Read 32 bytes at 0xede0.
+Read from 0xede0: 1648755322
+
+MM: Read 32 bytes at 0xedc0.
+Read from 0xeddc: -454703030
+
+MM: Read 32 bytes at 0xedc0.
+Read from 0xedd8: 511434839
+
+MM: Read 32 bytes at 0xedc0.
+Read from 0xedd4: -1997833139
+
+MM: Read 32 bytes at 0xedc0.
+Read from 0xedd0: 868049095
+
+MM: Read 32 bytes at 0xedc0.
+Read from 0xedcc: -747065101
+
+MM: Read 32 bytes at 0xedc0.
+Read from 0xedc8: 1935649014
+
+MM: Read 32 bytes at 0xedc0.
+Read from 0xedc4: 1549571101
+
+MM: Read 32 bytes at 0xedc0.
+Read from 0xedc0: -1240796816
+
+MM: Read 32 bytes at 0xeda0.
+Read from 0xedbc: -397705428
+
+MM: Read 32 bytes at 0xeda0.
+Read from 0xedb8: 94975538
+
+MM: Read 32 bytes at 0xeda0.
+Read from 0xedb4: 932131972
+
+MM: Read 32 bytes at 0xeda0.
+Read from 0xedb0: -1508752469
+
+MM: Read 32 bytes at 0xeda0.
+Read from 0xedac: 953724224
+
+MM: Read 32 bytes at 0xeda0.
+Read from 0xeda8: 1925787846
+
+MM: Read 32 bytes at 0xeda0.
+Read from 0xeda4: 954281702
+
+MM: Read 32 bytes at 0xeda0.
+Read from 0xeda0: -385424985
+
+MM: Read 32 bytes at 0xed80.
+Read from 0xed9c: -1195024245
+
+MM: Read 32 bytes at 0xed80.
+Read from 0xed98: 475235665
+
+*******************************************
+Write Hit Rate:		0% (0/56)
+Read Hit Rate:		0% (0/206)
+Total Hit Rate:		0% (0/262)
+Writes to Main Memory:	56
+Reads from Main Memory:	262
+*******************************************

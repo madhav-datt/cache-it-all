@@ -1,0 +1,14 @@
+MM: Read 32 bytes at 0xee00.
+Read from 0xee08: 1457167006
+
+Wrote to 0xee08: 941858447
+
+Read from 0xee08: 941858447
+
+*******************************************
+Write Hit Rate:		100% (1/1)
+Read Hit Rate:		50% (1/2)
+Total Hit Rate:		67% (2/3)
+Writes to Main Memory:	0
+Reads from Main Memory:	1
+*******************************************

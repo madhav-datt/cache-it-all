@@ -1,0 +1,143 @@
+MM: Read 32 bytes at 0x1da0.
+Wrote to 0x1da8: -904806390
+
+MM: Read 32 bytes at 0x19c0.
+Read from 0x19c4: 1096546219
+
+MM: Read 32 bytes at 0xb640.
+Wrote to 0xb658: -1649258369
+
+MM: Read 32 bytes at 0x5be0.
+Wrote to 0x5be8: 66636395
+
+MM: Read 32 bytes at 0x72e0.
+Wrote to 0x72e4: -161611214
+
+MM: Read 32 bytes at 0x100.
+Wrote to 0x10c: 37810500
+
+MM: Read 32 bytes at 0x9800.
+Read from 0x980c: 715249490
+
+Wrote to 0x110: 809922542
+
+Wrote to 0x9814: 470688895
+
+Wrote to 0x72e4: -579254916
+
+MM: Read 32 bytes at 0xd0c0.
+Read from 0xd0d4: 33424533
+
+MM: Read 32 bytes at 0xf540.
+Read from 0xf544: 630012290
+
+MM: Read 32 bytes at 0xe60.
+Read from 0xe68: 1913595450
+
+Wrote to 0x1da8: -2103519064
+
+Wrote to 0xb640: 1226453640
+
+Wrote to 0x72e4: -1281831101
+
+MM: Read 32 bytes at 0x2b60.
+Read from 0x2b7c: -137183124
+
+Read from 0x2b78: 772179920
+
+Wrote to 0x9808: 482354610
+
+Read from 0xe60: 1976404567
+
+Read from 0xf550: 1291569488
+
+Read from 0xf558: 2060528723
+
+Read from 0x10c: 37810500
+
+Read from 0xe60: 1976404567
+
+Wrote to 0x19c4: 880023653
+
+Wrote to 0xf540: 1001104100
+
+Read from 0x72f8: 1555770056
+
+Read from 0xf54c: -2033206316
+
+MM: Read 32 bytes at 0x1c80.
+Wrote to 0x1c90: 286938206
+
+MM: Read 32 bytes at 0x8620.
+Read from 0x8624: 380418472
+
+Wrote to 0x1db0: -2093567587
+
+Wrote to 0xe78: -1420885217
+
+Read from 0x1c84: 1212254715
+
+MM: Read 32 bytes at 0x70a0.
+Wrote to 0x70b8: -1161971046
+
+Wrote to 0x1c80: -279921492
+
+Wrote to 0xf554: -2115556207
+
+Wrote to 0x72e0: -2133647865
+
+Read from 0xf54c: -2033206316
+
+MM: Read 32 bytes at 0x3b80.
+Wrote to 0x3b80: 1653386779
+
+MM: Read 32 bytes at 0x2920.
+Read from 0x2930: -2058490824
+
+Wrote to 0x2b7c: 1287753253
+
+Read from 0x100: 76447639
+
+Read from 0xf550: 1291569488
+
+Read from 0x19cc: 454557355
+
+Wrote to 0x1dac: -1706850117
+
+Read from 0x8634: 1823437762
+
+Read from 0x1da0: 2119912264
+
+Wrote to 0x1db0: -1789518925
+
+Wrote to 0x8630: -2081007959
+
+Read from 0x1da0: 2119912264
+
+Wrote to 0x104: 1905361936
+
+Wrote to 0x5bec: -1960700622
+
+Read from 0x19dc: 1849433740
+
+Wrote to 0x9810: 1326214732
+
+Read from 0xe64: -801438337
+
+Read from 0x5be8: 66636395
+
+Read from 0xb640: 1226453640
+
+Wrote to 0x2b60: -639631570
+
+Read from 0x110: 809922542
+
+Read from 0xb640: 1226453640
+
+*******************************************
+Write Hit Rate:		73% (22/30)
+Read Hit Rate:		73% (22/30)
+Total Hit Rate:		73% (44/60)
+Writes to Main Memory:	0
+Reads from Main Memory:	16
+*******************************************

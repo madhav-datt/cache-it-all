@@ -1,0 +1,16 @@
+MM: Read 32 bytes at 0x1900.
+Wrote to 0x1914: 1846631159
+
+Read from 0x1914: 1846631159
+
+MM: Wrote 32 bytes at 0x1900.
+MM: Read 32 bytes at 0xf700.
+Wrote to 0xf70c: -1239193656
+
+*******************************************
+Write Hit Rate:		0% (0/2)
+Read Hit Rate:		100% (1/1)
+Total Hit Rate:		33% (1/3)
+Writes to Main Memory:	1
+Reads from Main Memory:	2
+*******************************************

@@ -1,0 +1,16 @@
+MM: Read 32 bytes at 0x8700.
+Read from 0x8710: -525266929
+
+MM: Read 32 bytes at 0x1a00.
+Read from 0x1a18: 144580775
+
+MM: Read 32 bytes at 0xb200.
+Read from 0xb204: 1572424277
+
+*******************************************
+Write Hit Rate:		nan% (0/0)
+Read Hit Rate:		0% (0/3)
+Total Hit Rate:		0% (0/3)
+Writes to Main Memory:	0
+Reads from Main Memory:	3
+*******************************************

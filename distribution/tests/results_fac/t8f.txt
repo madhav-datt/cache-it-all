@@ -1,0 +1,192 @@
+MM: Read 32 bytes at 0x3580.
+Read from 0x3580: 847838759
+
+MM: Read 32 bytes at 0xf380.
+Wrote to 0xf384: -1696639339
+
+MM: Read 32 bytes at 0x4040.
+Read from 0x404c: 831250877
+
+MM: Read 32 bytes at 0xe1e0.
+Wrote to 0xe1e4: -41500536
+
+Wrote to 0xe1fc: 536979857
+
+MM: Read 32 bytes at 0x3560.
+Read from 0x3560: 1394365948
+
+MM: Read 32 bytes at 0xade0.
+Read from 0xade0: 144280387
+
+MM: Read 32 bytes at 0x12c0.
+Read from 0x12c0: 1309147384
+
+MM: Read 32 bytes at 0xc680.
+Wrote to 0xc690: -1746908761
+
+Wrote to 0xf398: -66454464
+
+Wrote to 0xe1e0: -1631344080
+
+MM: Read 32 bytes at 0x2f00.
+Read from 0x2f10: -1301444621
+
+Wrote to 0x12d0: -973417221
+
+Wrote to 0xc690: -84138737
+
+MM: Read 32 bytes at 0xf520.
+Wrote to 0xf524: 403303449
+
+Read from 0x404c: 831250877
+
+MM: Read 32 bytes at 0x83a0.
+Wrote to 0x83a4: -1855746826
+
+MM: Read 32 bytes at 0xc9e0.
+Read from 0xc9e8: -1660250494
+
+Wrote to 0xc9ec: -876440124
+
+Read from 0x3564: 2056163296
+
+Wrote to 0x2f0c: -546536280
+
+MM: Read 32 bytes at 0x76e0.
+Read from 0x76e0: 1409815985
+
+Read from 0xf528: 1735206646
+
+MM: Read 32 bytes at 0xf7e0.
+Wrote to 0xf7e0: -1810193003
+
+MM: Read 32 bytes at 0xdaa0.
+Wrote to 0xdab4: 64415548
+
+Read from 0x76f4: 792622263
+
+MM: Read 32 bytes at 0xe860.
+Wrote to 0xe860: 894772764
+
+Wrote to 0xade0: 2032637231
+
+Read from 0x12c0: 1309147384
+
+Read from 0x83a4: -1855746826
+
+MM: Read 32 bytes at 0xd8c0.
+Read from 0xd8d0: -2146739084
+
+MM: Wrote 32 bytes at 0xf380.
+MM: Read 32 bytes at 0xa0a0.
+Read from 0xa0a4: -1612221954
+
+MM: Wrote 32 bytes at 0xe1e0.
+MM: Read 32 bytes at 0x59e0.
+Wrote to 0x59e4: 401489502
+
+MM: Wrote 32 bytes at 0xc680.
+MM: Read 32 bytes at 0x7a20.
+Wrote to 0x7a24: 616261756
+
+MM: Read 32 bytes at 0x240.
+Read from 0x240: -569983439
+
+MM: Wrote 32 bytes at 0xc9e0.
+MM: Read 32 bytes at 0x64e0.
+Read from 0x64f4: -860267397
+
+MM: Read 32 bytes at 0xb060.
+Read from 0xb068: -1106541031
+
+MM: Wrote 32 bytes at 0x2f00.
+MM: Read 32 bytes at 0x5d60.
+Read from 0x5d74: -1553917057
+
+MM: Wrote 32 bytes at 0xf520.
+MM: Read 32 bytes at 0x45c0.
+Wrote to 0x45cc: -938760290
+
+MM: Wrote 32 bytes at 0xf7e0.
+MM: Read 32 bytes at 0x4a60.
+Wrote to 0x4a68: 337920602
+
+MM: Wrote 32 bytes at 0xdaa0.
+MM: Read 32 bytes at 0xe1e0.
+Wrote to 0xe1f8: -1203386785
+
+MM: Read 32 bytes at 0x97e0.
+Read from 0x97f8: -204853715
+
+MM: Wrote 32 bytes at 0xe860.
+MM: Read 32 bytes at 0x4540.
+Wrote to 0x455c: -622978143
+
+MM: Wrote 32 bytes at 0xade0.
+MM: Read 32 bytes at 0xf6c0.
+Wrote to 0xf6dc: 204922072
+
+MM: Wrote 32 bytes at 0x12c0.
+MM: Read 32 bytes at 0xdc20.
+Wrote to 0xdc3c: -944984693
+
+MM: Wrote 32 bytes at 0x83a0.
+MM: Read 32 bytes at 0x3aa0.
+Wrote to 0x3aa8: -1376418012
+
+MM: Read 32 bytes at 0xac20.
+Wrote to 0xac20: -872004261
+
+MM: Read 32 bytes at 0xc3c0.
+Wrote to 0xc3c4: 1553187599
+
+MM: Wrote 32 bytes at 0x59e0.
+MM: Read 32 bytes at 0xe600.
+Read from 0xe618: -1485664496
+
+MM: Wrote 32 bytes at 0x7a20.
+MM: Read 32 bytes at 0x4580.
+Read from 0x4598: 1282253887
+
+MM: Read 32 bytes at 0xa900.
+Read from 0xa900: -1657700368
+
+MM: Read 32 bytes at 0x53c0.
+Wrote to 0x53c8: 2087105500
+
+MM: Read 32 bytes at 0x2d20.
+Read from 0x2d38: 595857984
+
+MM: Read 32 bytes at 0xf0e0.
+Read from 0xf0e4: 1747609582
+
+MM: Wrote 32 bytes at 0x45c0.
+MM: Read 32 bytes at 0x5f00.
+Wrote to 0x5f1c: -271582607
+
+MM: Wrote 32 bytes at 0x4a60.
+MM: Read 32 bytes at 0xe40.
+Read from 0xe54: 905117836
+
+MM: Wrote 32 bytes at 0xe1e0.
+MM: Read 32 bytes at 0xa320.
+Wrote to 0xa330: -1894464066
+
+MM: Read 32 bytes at 0x1b00.
+Wrote to 0x1b00: -1374738239
+
+MM: Wrote 32 bytes at 0x4540.
+MM: Read 32 bytes at 0x880.
+Read from 0x89c: 1183342466
+
+MM: Wrote 32 bytes at 0xf6c0.
+MM: Read 32 bytes at 0xabe0.
+Wrote to 0xabf0: -1246795227
+
+*******************************************
+Write Hit Rate:		25% (8/32)
+Read Hit Rate:		21% (6/28)
+Total Hit Rate:		23% (14/60)
+Writes to Main Memory:	19
+Reads from Main Memory:	46
+*******************************************

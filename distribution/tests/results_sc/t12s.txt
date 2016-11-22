@@ -1,0 +1,19 @@
+MM: Read 32 bytes at 0x53a0.
+Read from 0x53b4: 1406182955
+
+MM: Read 32 bytes at 0x94a0.
+Read from 0x94b8: 1500226516
+
+MM: Read 32 bytes at 0x23a0.
+Read from 0x23b0: -427136193
+
+MM: Read 32 bytes at 0x53a0.
+Read from 0x53b4: 1406182955
+
+*******************************************
+Write Hit Rate:		nan% (0/0)
+Read Hit Rate:		0% (0/4)
+Total Hit Rate:		0% (0/4)
+Writes to Main Memory:	0
+Reads from Main Memory:	4
+*******************************************

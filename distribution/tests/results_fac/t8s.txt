@@ -1,0 +1,192 @@
+MM: Read 32 bytes at 0x740.
+Wrote to 0x748: 787026986
+
+MM: Read 32 bytes at 0x6b80.
+Wrote to 0x6b90: 1948976060
+
+MM: Read 32 bytes at 0x8080.
+Wrote to 0x8088: -114192
+
+MM: Read 32 bytes at 0xc2e0.
+Read from 0xc2f0: -557804370
+
+Read from 0xc2e0: -1977557020
+
+MM: Read 32 bytes at 0xe200.
+Read from 0xe20c: -1475945881
+
+MM: Read 32 bytes at 0xfa00.
+Wrote to 0xfa14: -1832900964
+
+MM: Read 32 bytes at 0xb8a0.
+Read from 0xb8b8: 2017154824
+
+Wrote to 0x748: 437128759
+
+MM: Read 32 bytes at 0x1dc0.
+Read from 0x1dd4: 1923332670
+
+Read from 0x1dc4: 1532005712
+
+Wrote to 0x1dc4: -1451151934
+
+Read from 0xb8a0: -1113586941
+
+MM: Read 32 bytes at 0xa3a0.
+Read from 0xa3ac: 358266294
+
+MM: Read 32 bytes at 0xdc40.
+Wrote to 0xdc48: 404555668
+
+MM: Read 32 bytes at 0x1a20.
+Wrote to 0x1a28: 858997354
+
+MM: Read 32 bytes at 0x9360.
+Read from 0x9368: 1848119785
+
+MM: Read 32 bytes at 0x38c0.
+Wrote to 0x38dc: -1919103465
+
+Read from 0x75c: 1974645977
+
+MM: Read 32 bytes at 0x5b60.
+Wrote to 0x5b70: 839598856
+
+Read from 0xdc54: 1810456101
+
+Read from 0x6b98: -382817881
+
+Read from 0x38d0: -1954104422
+
+MM: Read 32 bytes at 0xb420.
+Read from 0xb43c: -1483165271
+
+Wrote to 0xc2e4: -1933138608
+
+Wrote to 0xdc58: -1852821079
+
+Wrote to 0xdc40: -1638637074
+
+Read from 0x808c: 15346817
+
+Read from 0x936c: -93571991
+
+MM: Read 32 bytes at 0x2ce0.
+Wrote to 0x2cfc: 1532672389
+
+MM: Read 32 bytes at 0xd260.
+Wrote to 0xd268: -472790803
+
+MM: Wrote 32 bytes at 0xfa00.
+MM: Read 32 bytes at 0x3a0.
+Wrote to 0x3bc: 2140546211
+
+MM: Wrote 32 bytes at 0x1dc0.
+MM: Read 32 bytes at 0x6f80.
+Wrote to 0x6f94: -866118036
+
+MM: Read 32 bytes at 0x7480.
+Read from 0x748c: -232784887
+
+MM: Read 32 bytes at 0x7a0.
+Wrote to 0x7ac: -1144849964
+
+MM: Wrote 32 bytes at 0x1a20.
+MM: Read 32 bytes at 0xee80.
+Read from 0xee98: 1561311679
+
+MM: Wrote 32 bytes at 0x740.
+MM: Read 32 bytes at 0xf760.
+Read from 0xf77c: 384262642
+
+MM: Wrote 32 bytes at 0x5b60.
+MM: Read 32 bytes at 0x69a0.
+Read from 0x69a8: 604856882
+
+MM: Wrote 32 bytes at 0x6b80.
+MM: Read 32 bytes at 0xa260.
+Wrote to 0xa270: -429315488
+
+MM: Wrote 32 bytes at 0x38c0.
+MM: Read 32 bytes at 0x5740.
+Wrote to 0x5744: -1124636810
+
+MM: Read 32 bytes at 0x4400.
+Wrote to 0x4408: -1234556374
+
+MM: Wrote 32 bytes at 0xc2e0.
+MM: Read 32 bytes at 0x4340.
+Read from 0x4344: -2011314035
+
+MM: Wrote 32 bytes at 0xdc40.
+MM: Read 32 bytes at 0xc2c0.
+Read from 0xc2d8: 100730809
+
+MM: Wrote 32 bytes at 0x8080.
+MM: Read 32 bytes at 0x5000.
+Wrote to 0x5004: 1395655338
+
+MM: Read 32 bytes at 0x48c0.
+Wrote to 0x48d8: -728370871
+
+MM: Wrote 32 bytes at 0x2ce0.
+MM: Read 32 bytes at 0x8580.
+Read from 0x8580: -550896685
+
+MM: Wrote 32 bytes at 0xd260.
+MM: Read 32 bytes at 0x9ca0.
+Read from 0x9ca8: -1470671787
+
+MM: Wrote 32 bytes at 0x3a0.
+MM: Read 32 bytes at 0x4fc0.
+Read from 0x4fd8: -537083468
+
+MM: Wrote 32 bytes at 0x6f80.
+MM: Read 32 bytes at 0xf060.
+Read from 0xf074: 518794888
+
+MM: Read 32 bytes at 0xf120.
+Read from 0xf120: 398202974
+
+MM: Wrote 32 bytes at 0x7a0.
+MM: Read 32 bytes at 0x7560.
+Read from 0x757c: -238249524
+
+MM: Read 32 bytes at 0x8380.
+Read from 0x838c: -785881981
+
+MM: Read 32 bytes at 0x7200.
+Read from 0x7214: 2129890626
+
+MM: Read 32 bytes at 0x1600.
+Read from 0x1618: -577324224
+
+MM: Wrote 32 bytes at 0xa260.
+MM: Read 32 bytes at 0xf40.
+Read from 0xf5c: 1740416893
+
+MM: Wrote 32 bytes at 0x5740.
+MM: Read 32 bytes at 0xb340.
+Read from 0xb354: 831187835
+
+MM: Wrote 32 bytes at 0x4400.
+MM: Read 32 bytes at 0xc20.
+Read from 0xc38: 635587651
+
+MM: Read 32 bytes at 0x3b40.
+Wrote to 0x3b5c: 1503539706
+
+MM: Read 32 bytes at 0x2920.
+Wrote to 0x2934: -1092188529
+
+MM: Wrote 32 bytes at 0x5000.
+MM: Read 32 bytes at 0x2c20.
+Wrote to 0x2c3c: -1398704877
+
+*******************************************
+Write Hit Rate:		19% (5/26)
+Read Hit Rate:		26% (9/34)
+Total Hit Rate:		23% (14/60)
+Writes to Main Memory:	19
+Reads from Main Memory:	46
+*******************************************

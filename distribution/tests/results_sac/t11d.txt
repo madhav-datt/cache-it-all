@@ -1,0 +1,13 @@
+MM: Read 32 bytes at 0x5620.
+Wrote to 0x563c: 190236657
+
+MM: Read 32 bytes at 0x8a20.
+Wrote to 0x8a20: -426728406
+
+*******************************************
+Write Hit Rate:		0% (0/2)
+Read Hit Rate:		nan% (0/0)
+Total Hit Rate:		0% (0/2)
+Writes to Main Memory:	0
+Reads from Main Memory:	2
+*******************************************

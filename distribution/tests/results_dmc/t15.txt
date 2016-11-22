@@ -1,0 +1,555 @@
+MM: Read 32 bytes at 0xed80.
+Read from 0xed98: 475235665
+
+Wrote to 0xed9c: -1195024245
+
+MM: Read 32 bytes at 0xeda0.
+Wrote to 0xeda0: -385424985
+
+Read from 0xeda4: 954281702
+
+Read from 0xeda8: 1925787846
+
+Read from 0xedac: 953724224
+
+Wrote to 0xedb0: -1508752469
+
+Read from 0xedb4: 932131972
+
+Wrote to 0xedb8: 94975538
+
+Read from 0xedbc: -397705428
+
+MM: Read 32 bytes at 0xedc0.
+Read from 0xedc0: -1240796816
+
+Read from 0xedc4: 1549571101
+
+Read from 0xedc8: 1935649014
+
+Read from 0xedcc: -747065101
+
+Read from 0xedd0: 868049095
+
+Wrote to 0xedd4: -1997833139
+
+Read from 0xedd8: 511434839
+
+Wrote to 0xeddc: -454703030
+
+MM: Read 32 bytes at 0xede0.
+Read from 0xede0: 1648755322
+
+Read from 0xede4: 1504338702
+
+Wrote to 0xede8: 1130857300
+
+Read from 0xedec: 466093282
+
+Read from 0xedf0: 1990075866
+
+Read from 0xedf4: 1334855240
+
+Wrote to 0xedf8: 138252352
+
+Wrote to 0xedfc: 1647004822
+
+MM: Read 32 bytes at 0xee00.
+Read from 0xee00: -1119952667
+
+Wrote to 0xee04: 10069325
+
+Read from 0xee08: 1457167006
+
+Wrote to 0xee0c: 337561372
+
+Read from 0xee10: 179007629
+
+Read from 0xee14: 857933564
+
+Wrote to 0xee18: 1264490922
+
+Read from 0xee1c: -544674886
+
+MM: Read 32 bytes at 0xee20.
+Read from 0xee20: -332572808
+
+Wrote to 0xee24: 995290068
+
+Read from 0xee28: -1591063807
+
+Wrote to 0xee2c: 1143980901
+
+Read from 0xee30: 702132747
+
+Read from 0xee34: -564885826
+
+Read from 0xee38: 1555631631
+
+Read from 0xee3c: -1310457833
+
+MM: Read 32 bytes at 0xee40.
+Read from 0xee40: 390944669
+
+Read from 0xee44: -766144647
+
+Read from 0xee48: -1605104225
+
+Read from 0xee4c: 2067263224
+
+Read from 0xee50: 128162647
+
+Wrote to 0xee54: -1738033170
+
+Wrote to 0xee58: 1662058316
+
+Wrote to 0xee5c: -340450425
+
+MM: Read 32 bytes at 0xee60.
+Wrote to 0xee60: -396495218
+
+Wrote to 0xee64: -1297078309
+
+Wrote to 0xee68: -144884729
+
+Read from 0xee6c: -210424554
+
+Read from 0xee70: -753923495
+
+Read from 0xee74: 1642282270
+
+Read from 0xee78: -155077143
+
+Read from 0xee7c: -335961384
+
+MM: Read 32 bytes at 0xee80.
+Wrote to 0xee80: 1429643244
+
+Read from 0xee84: -1364105586
+
+Read from 0xee88: 1416832414
+
+Wrote to 0xee8c: -660932877
+
+Wrote to 0xee90: 251482399
+
+Wrote to 0xee94: -1913540715
+
+Read from 0xee98: 1561311679
+
+Wrote to 0xee9c: 1902446103
+
+MM: Read 32 bytes at 0xeea0.
+Read from 0xeea0: 1946688994
+
+Wrote to 0xeea4: -86635104
+
+Read from 0xeea8: 1291291449
+
+Wrote to 0xeeac: -1944965748
+
+Read from 0xeeb0: -239844126
+
+Read from 0xeeb4: 1312829184
+
+Read from 0xeeb8: 510681218
+
+Wrote to 0xeebc: 1697345299
+
+MM: Read 32 bytes at 0xeec0.
+Wrote to 0xeec0: 1892119061
+
+Wrote to 0xeec4: 324340562
+
+Read from 0xeec8: -190228438
+
+Read from 0xeecc: 484697718
+
+Wrote to 0xeed0: 1018621339
+
+Read from 0xeed4: -441480914
+
+Read from 0xeed8: -1410664894
+
+Wrote to 0xeedc: -1202914037
+
+MM: Read 32 bytes at 0xeee0.
+Read from 0xeee0: 393036095
+
+Read from 0xeee4: 602741698
+
+Wrote to 0xeee8: -310709029
+
+Read from 0xeeec: 942034529
+
+Read from 0xeef0: 736633766
+
+Read from 0xeef4: -828046520
+
+Wrote to 0xeef8: 1536646338
+
+Read from 0xeefc: 1381775769
+
+MM: Read 32 bytes at 0xef00.
+Read from 0xef00: 2107457569
+
+Wrote to 0xef04: -409481891
+
+Wrote to 0xef08: 827416093
+
+Read from 0xef0c: -488894338
+
+Wrote to 0xef10: 241588046
+
+Wrote to 0xef14: 1260209385
+
+Wrote to 0xef18: -891143474
+
+Read from 0xef1c: -771844057
+
+MM: Read 32 bytes at 0xef20.
+Read from 0xef20: 1327841692
+
+Read from 0xef24: 652227682
+
+Wrote to 0xef28: -1825039644
+
+Wrote to 0xef2c: 1577122585
+
+Read from 0xef30: -1686842922
+
+Wrote to 0xef34: 508836257
+
+Wrote to 0xef38: -214887961
+
+Read from 0xef3c: -1598586640
+
+MM: Read 32 bytes at 0xef40.
+Wrote to 0xef40: -2137952563
+
+Wrote to 0xef44: 1034183797
+
+Wrote to 0xef48: 646983685
+
+Read from 0xef4c: 837945890
+
+Wrote to 0xef50: -360722232
+
+Wrote to 0xef54: -1601708169
+
+Read from 0xef58: -912494305
+
+Read from 0xef5c: 1982280150
+
+MM: Read 32 bytes at 0xef60.
+Wrote to 0xef60: 516088771
+
+Read from 0xef64: 1197579885
+
+Read from 0xef68: -478779467
+
+Wrote to 0xef6c: -1434778929
+
+Read from 0xef70: -1327191258
+
+Read from 0xef74: -1286342071
+
+Wrote to 0xef78: 1145472726
+
+Read from 0xef7c: 1005757365
+
+MM: Wrote 32 bytes at 0xed80.
+MM: Read 32 bytes at 0xef80.
+Wrote to 0xef80: -2089537565
+
+Wrote to 0xef84: 1323038895
+
+Read from 0xef88: 1783027102
+
+Wrote to 0xef8c: 798105975
+
+Read from 0xef90: 2090719458
+
+Read from 0xef94: 480591512
+
+Read from 0xef98: 748924010
+
+Wrote to 0xef9c: 1114546716
+
+MM: Wrote 32 bytes at 0xeda0.
+MM: Read 32 bytes at 0xefa0.
+Wrote to 0xefa0: -1088843092
+
+Read from 0xefa0: -1088843092
+
+Read from 0xef9c: 1114546716
+
+Read from 0xef98: 748924010
+
+Read from 0xef94: 480591512
+
+Read from 0xef90: 2090719458
+
+Read from 0xef8c: 798105975
+
+Read from 0xef88: 1783027102
+
+Read from 0xef84: 1323038895
+
+Read from 0xef80: -2089537565
+
+Read from 0xef7c: 1005757365
+
+Read from 0xef78: 1145472726
+
+Read from 0xef74: -1286342071
+
+Read from 0xef70: -1327191258
+
+Read from 0xef6c: -1434778929
+
+Read from 0xef68: -478779467
+
+Read from 0xef64: 1197579885
+
+Read from 0xef60: 516088771
+
+Read from 0xef5c: 1982280150
+
+Read from 0xef58: -912494305
+
+Read from 0xef54: -1601708169
+
+Read from 0xef50: -360722232
+
+Read from 0xef4c: 837945890
+
+Read from 0xef48: 646983685
+
+Read from 0xef44: 1034183797
+
+Read from 0xef40: -2137952563
+
+Read from 0xef3c: -1598586640
+
+Read from 0xef38: -214887961
+
+Read from 0xef34: 508836257
+
+Read from 0xef30: -1686842922
+
+Read from 0xef2c: 1577122585
+
+Read from 0xef28: -1825039644
+
+Read from 0xef24: 652227682
+
+Read from 0xef20: 1327841692
+
+Read from 0xef1c: -771844057
+
+Read from 0xef18: -891143474
+
+Read from 0xef14: 1260209385
+
+Read from 0xef10: 241588046
+
+Read from 0xef0c: -488894338
+
+Read from 0xef08: 827416093
+
+Read from 0xef04: -409481891
+
+Read from 0xef00: 2107457569
+
+Read from 0xeefc: 1381775769
+
+Read from 0xeef8: 1536646338
+
+Read from 0xeef4: -828046520
+
+Read from 0xeef0: 736633766
+
+Read from 0xeeec: 942034529
+
+Read from 0xeee8: -310709029
+
+Read from 0xeee4: 602741698
+
+Read from 0xeee0: 393036095
+
+Read from 0xeedc: -1202914037
+
+Read from 0xeed8: -1410664894
+
+Read from 0xeed4: -441480914
+
+Read from 0xeed0: 1018621339
+
+Read from 0xeecc: 484697718
+
+Read from 0xeec8: -190228438
+
+Read from 0xeec4: 324340562
+
+Read from 0xeec0: 1892119061
+
+Read from 0xeebc: 1697345299
+
+Read from 0xeeb8: 510681218
+
+Read from 0xeeb4: 1312829184
+
+Read from 0xeeb0: -239844126
+
+Read from 0xeeac: -1944965748
+
+Read from 0xeea8: 1291291449
+
+Read from 0xeea4: -86635104
+
+Read from 0xeea0: 1946688994
+
+Read from 0xee9c: 1902446103
+
+Read from 0xee98: 1561311679
+
+Read from 0xee94: -1913540715
+
+Read from 0xee90: 251482399
+
+Read from 0xee8c: -660932877
+
+Read from 0xee88: 1416832414
+
+Read from 0xee84: -1364105586
+
+Read from 0xee80: 1429643244
+
+Read from 0xee7c: -335961384
+
+Read from 0xee78: -155077143
+
+Read from 0xee74: 1642282270
+
+Read from 0xee70: -753923495
+
+Read from 0xee6c: -210424554
+
+Read from 0xee68: -144884729
+
+Read from 0xee64: -1297078309
+
+Read from 0xee60: -396495218
+
+Read from 0xee5c: -340450425
+
+Read from 0xee58: 1662058316
+
+Read from 0xee54: -1738033170
+
+Read from 0xee50: 128162647
+
+Read from 0xee4c: 2067263224
+
+Read from 0xee48: -1605104225
+
+Read from 0xee44: -766144647
+
+Read from 0xee40: 390944669
+
+Read from 0xee3c: -1310457833
+
+Read from 0xee38: 1555631631
+
+Read from 0xee34: -564885826
+
+Read from 0xee30: 702132747
+
+Read from 0xee2c: 1143980901
+
+Read from 0xee28: -1591063807
+
+Read from 0xee24: 995290068
+
+Read from 0xee20: -332572808
+
+Read from 0xee1c: -544674886
+
+Read from 0xee18: 1264490922
+
+Read from 0xee14: 857933564
+
+Read from 0xee10: 179007629
+
+Read from 0xee0c: 337561372
+
+Read from 0xee08: 1457167006
+
+Read from 0xee04: 10069325
+
+Read from 0xee00: -1119952667
+
+Read from 0xedfc: 1647004822
+
+Read from 0xedf8: 138252352
+
+Read from 0xedf4: 1334855240
+
+Read from 0xedf0: 1990075866
+
+Read from 0xedec: 466093282
+
+Read from 0xede8: 1130857300
+
+Read from 0xede4: 1504338702
+
+Read from 0xede0: 1648755322
+
+Read from 0xeddc: -454703030
+
+Read from 0xedd8: 511434839
+
+Read from 0xedd4: -1997833139
+
+Read from 0xedd0: 868049095
+
+Read from 0xedcc: -747065101
+
+Read from 0xedc8: 1935649014
+
+Read from 0xedc4: 1549571101
+
+Read from 0xedc0: -1240796816
+
+MM: Wrote 32 bytes at 0xefa0.
+MM: Read 32 bytes at 0xeda0.
+Read from 0xedbc: -397705428
+
+Read from 0xedb8: 94975538
+
+Read from 0xedb4: 932131972
+
+Read from 0xedb0: -1508752469
+
+Read from 0xedac: 953724224
+
+Read from 0xeda8: 1925787846
+
+Read from 0xeda4: 954281702
+
+Read from 0xeda0: -385424985
+
+MM: Wrote 32 bytes at 0xef80.
+MM: Read 32 bytes at 0xed80.
+Read from 0xed9c: -1195024245
+
+Read from 0xed98: 475235665
+
+*******************************************
+Write Hit Rate:		86% (48/56)
+Read Hit Rate:		94% (194/206)
+Total Hit Rate:		92% (242/262)
+Writes to Main Memory:	4
+Reads from Main Memory:	20
+*******************************************
