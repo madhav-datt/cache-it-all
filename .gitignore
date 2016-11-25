@@ -8,6 +8,8 @@
 # Other files
 *.pdf
 *.idea
+cmake-*
+*.DS_Store
 
 # Precompiled Headers
 *.gch
