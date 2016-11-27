@@ -7,12 +7,18 @@
 #define DIRECT_MAPPED_NUM_SETS 16
 #define DIRECT_MAPPED_NUM_SETS_LN 4
 
+typedef struct set
+{
+    int is_valid;
+    int tag;
+    int* data;
+} set;
+
 typedef struct direct_mapped_cache
 {
     main_memory* mm;
     cache_stats cs;
-    
-    // TODO: add anything you need
+    set* cache_set;
 } direct_mapped_cache;
 
 // Do not edit below this line
