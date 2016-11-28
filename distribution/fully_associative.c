@@ -16,21 +16,17 @@ fully_associative_cache* fac_init(main_memory* mm)
     result->cs = cs_init();
     result->num_sets = 0;
     result->cache_set = malloc(FULLY_ASSOCIATIVE_NUM_WAYS * sizeof(fully_assoc_set));
+    result->usage = malloc(FULLY_ASSOCIATIVE_NUM_WAYS * sizeof(int));
     for (int i = 0; i < FULLY_ASSOCIATIVE_NUM_WAYS; i++)
     {
         result->cache_set[i].is_valid = 0;
         result->cache_set[i].is_dirty = 0;
         result->cache_set[i].mem_block = malloc(sizeof(memory_block));
+        result->usage[i] = 0;
     }
     return result;
 }
 
-// Optional
-/*
-static void mark_as_used(fully_associative_cache* fac, int way)
-{
-}
-*/
 
 /**
  * Find least recently used memory block for eviction
@@ -39,7 +35,22 @@ static void mark_as_used(fully_associative_cache* fac, int way)
  */
 static int lru(fully_associative_cache* fac)
 {
-    return 0;
+    // Check if cache still has space, ie. no eviction needed
+    if (fac->num_sets < FULLY_ASSOCIATIVE_NUM_WAYS)
+        return fac->num_sets++;
+
+    int max_index = 0;
+    int max_value = fac->usage[0];
+
+    for (int i = 0; i < FULLY_ASSOCIATIVE_NUM_WAYS; i++)
+    {
+        if (fac->usage[i] > max_value)
+        {
+            max_value = fac->usage[i];
+            max_index = i;
+        }
+    }
+    return max_index;
 }
 
 /**
@@ -106,6 +117,11 @@ void fac_store_word(fully_associative_cache* fac, void* addr, unsigned int val)
     *mb_addr = val;
     fac->cache_set[index].is_dirty = 1;
 
+    fac->usage[index] = 0;
+    for (int i = 0; i < fac->num_sets; i++)
+        if (i != index)
+            fac->usage[i]++;
+
     // Update statistics
     fac->cs.w_queries++;
 }
@@ -149,6 +165,11 @@ unsigned int fac_load_word(fully_associative_cache* fac, void* addr)
     // Extract required word care about
     unsigned int* mb_addr = fac->cache_set[index].mem_block->data + addr_offt;
 
+    fac->usage[index] = 0;
+    for (int i = 0; i < fac->num_sets; i++)
+        if (i != index)
+            fac->usage[i]++;
+
     // Update statistics
     fac->cs.r_queries++;
 
@@ -164,6 +185,7 @@ void fac_free(fully_associative_cache* fac)
     for (int i = 0; i < FULLY_ASSOCIATIVE_NUM_WAYS; i++)
         mb_free(fac->cache_set[i].mem_block);
 
+    free(fac->usage);
     free(fac->cache_set);
     free(fac);
 }
