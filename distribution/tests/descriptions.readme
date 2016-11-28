@@ -1,4 +1,4 @@
-1   R (correct mm_init.data value returned)
+1   R (correct mm_init.mem_block value returned)
 2   RR (same value each time)
 3   WR (same value read as written)
 4   RWR (value changes from initial value to written value)

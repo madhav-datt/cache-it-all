@@ -10,8 +10,8 @@
 typedef struct set
 {
     int is_valid;
-    int tag;
-    int* data;
+    int is_dirty;
+    memory_block* mem_block;
 } set;
 
 typedef struct direct_mapped_cache

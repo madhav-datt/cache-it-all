@@ -21,7 +21,7 @@ main_memory* mm_init()
     result->data = malloc(MAIN_MEMORY_SIZE);
     if (fread(result->data, MAIN_MEMORY_SIZE, 1, input_file) != 1)
     {
-        fprintf(stderr, "Error: Not enough data in %s.\n\n",
+        fprintf(stderr, "Error: Not enough mem_block in %s.\n\n",
                 MAIN_MEMORY_INIT_FILE);
         exit(2);
     }

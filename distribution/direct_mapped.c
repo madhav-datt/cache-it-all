@@ -3,8 +3,6 @@
 #include "memory_block.h"
 #include "direct_mapped.h"
 
-#define ADDR_SIZE_BITS 16
-
 /**
  * Allocate memory and initialize cache
  * @param mm: main memory
@@ -19,7 +17,8 @@ direct_mapped_cache* dmc_init(main_memory* mm)
     for (int i = 0; i < DIRECT_MAPPED_NUM_SETS; i++)
     {
         result->cache_set[i].is_valid = 0;
-        result->cache_set[i].data = malloc(MAIN_MEMORY_BLOCK_SIZE);
+        result->cache_set[i].is_dirty = 0;
+        result->cache_set[i].mem_block = malloc(sizeof(memory_block));
     }
     return result;
 }
@@ -31,75 +30,102 @@ direct_mapped_cache* dmc_init(main_memory* mm)
  */
 static int addr_to_set(void* addr)
 {
-    //TODO
-    return 0;
-}
-
-
-/**
- * Convert decimal to 16-bit binary
- * @param n: decimal value
- * @return int array with binary representation
- */
-static int* to_binary(int n)
-{
-    int count = 0;
-    int* pointer;
-
-    pointer = malloc((ADDR_SIZE_BITS) * sizeof(int));
-
-    for (int c = ADDR_SIZE_BITS - 1 ; c >= 0 ; c--)
-    {
-        int d = n >> c;
-        if (d & 1)
-            pointer[count] = 1;
-        else
-            pointer[count] = 0;
-        count++;
-    }
-    return pointer;
+    unsigned int result = (unsigned int) addr;
+    return (result >> MAIN_MEMORY_BLOCK_SIZE_LN) & ((1 << DIRECT_MAPPED_NUM_SETS_LN) - 1);
 }
 
 /**
- * Convert binary representation to decimal
- * @param bin: 16-bit binary in integer array
- * @return integer decimal value
- */
-static int to_decimal(int* bin)
-{
-    int dec = 0;
-    for (int i = 0; i < ADDR_SIZE_BITS; i++)
-    {
-        if (bin[i] == 1)
-            dec = dec * 2 + 1;
-        else
-            dec *= 2;
-    }
-    return dec;
-}
-
-/**
- * Store val at addr
- * @param dmc: pointed to cache
+ * Store val at addr (write query)
+ * @param dmc: pointer to cache
  * @param addr: address where data is to be stored (always properly aligned)
  * @param val: data
  */
 void dmc_store_word(direct_mapped_cache* dmc, void* addr, unsigned int val)
 {
-    // TODO
+    // Check if read query is a miss
+
+    // Pre-compute start address of memory block
+    size_t addr_offt = (size_t) (addr - MAIN_MEMORY_START_ADDR) % MAIN_MEMORY_BLOCK_SIZE;
+    void* mb_start_addr = addr - addr_offt;
+
+    int index = addr_to_set(mb_start_addr);
+    int result = (int) mb_start_addr;
+    int tag = result >> (MAIN_MEMORY_BLOCK_SIZE_LN + DIRECT_MAPPED_NUM_SETS_LN);
+    int mem_addr_tag = ((int) dmc->cache_set[index].mem_block->start_addr)
+            >> (MAIN_MEMORY_BLOCK_SIZE_LN + DIRECT_MAPPED_NUM_SETS_LN);
+
+    // Miss - Addr was not previously loaded into cache
+    if (!(dmc->cache_set[index].is_valid == 1 && mem_addr_tag == tag))
+    {
+        // Write memory block to main memory if valid and dirty
+        if (dmc->cache_set[index].is_valid == 1 && dmc->cache_set[index].is_dirty == 1)
+            mm_write(dmc->mm, mb_start_addr, dmc->cache_set[index].mem_block);
+
+        // Load memory block from main memory
+        memory_block* mb = mm_read(dmc->mm, mb_start_addr);
+        dmc->cache_set[index].mem_block = mb;
+        dmc->cache_set[index].is_valid = 1;
+
+        dmc->cs.r_misses++;
+    }
+
+    // Extract required word care about
+    unsigned int* mb_addr = dmc->cache_set[index].mem_block->data + addr_offt;
+    *mb_addr = val;
+    dmc->cache_set[index].is_dirty = 1;
+
+    // Update statistics
+    dmc->cs.r_queries++;
 }
 
+/**
+ * Read value at addr (read query)
+ * @param dmc: pointer to cache
+ * @param addr: address where data is stored
+ * @return val: data stored at addr
+ */
 unsigned int dmc_load_word(direct_mapped_cache* dmc, void* addr)
 {   
-    // TODO
-    
-    return 0;
+    // Check if read query is a miss
+
+    // Pre-compute start address of memory block
+    size_t addr_offt = (size_t) (addr - MAIN_MEMORY_START_ADDR) % MAIN_MEMORY_BLOCK_SIZE;
+    void* mb_start_addr = addr - addr_offt;
+
+    int index = addr_to_set(mb_start_addr);
+    int result = (int) mb_start_addr;
+    int tag = result >> (MAIN_MEMORY_BLOCK_SIZE_LN + DIRECT_MAPPED_NUM_SETS_LN);
+    int mem_addr_tag = ((int) dmc->cache_set[index].mem_block->start_addr)
+            >> (MAIN_MEMORY_BLOCK_SIZE_LN + DIRECT_MAPPED_NUM_SETS_LN);
+
+    // Miss - Addr was not previously loaded into cache
+    if (!(dmc->cache_set[index].is_valid == 1 && mem_addr_tag == tag))
+    {
+        // Write memory block to main memory if valid and dirty
+        if (dmc->cache_set[index].is_valid == 1 && dmc->cache_set[index].is_dirty == 1)
+            mm_write(dmc->mm, mb_start_addr, dmc->cache_set[index].mem_block);
+
+        // Load memory block from main memory
+        memory_block* mb = mm_read(dmc->mm, mb_start_addr);
+        dmc->cache_set[index].mem_block = mb;
+        dmc->cache_set[index].is_valid = 1;
+
+        dmc->cs.r_misses++;
+    }
+
+    // Extract required word care about
+    unsigned int* mb_addr = dmc->cache_set[index].mem_block->data + addr_offt;
+
+    // Update statistics
+    dmc->cs.r_queries++;
+
+    return *mb_addr;
 }
 
 void dmc_free(direct_mapped_cache* dmc)
 {
     for (int i = 0; i < DIRECT_MAPPED_NUM_SETS; i++)
-        free(dmc->cache_set[i].data);
+        free(dmc->cache_set[i].mem_block);
 
     free(dmc->cache_set);
     free(dmc);
