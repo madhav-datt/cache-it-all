@@ -7,18 +7,18 @@
 #define DIRECT_MAPPED_NUM_SETS 16
 #define DIRECT_MAPPED_NUM_SETS_LN 4
 
-typedef struct set
+typedef struct direct_map_set
 {
     int is_valid;
     int is_dirty;
     memory_block* mem_block;
-} set;
+} direct_map_set;
 
 typedef struct direct_mapped_cache
 {
     main_memory* mm;
     cache_stats cs;
-    set* cache_set;
+    direct_map_set* cache_set;
 } direct_mapped_cache;
 
 // Do not edit below this line

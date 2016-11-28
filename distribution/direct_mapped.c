@@ -14,7 +14,7 @@ direct_mapped_cache* dmc_init(main_memory* mm)
     direct_mapped_cache* result = malloc(sizeof(direct_mapped_cache));
     result->mm = mm;
     result->cs = cs_init();
-    result->cache_set = malloc(DIRECT_MAPPED_NUM_SETS * sizeof(set));
+    result->cache_set = malloc(DIRECT_MAPPED_NUM_SETS * sizeof(direct_map_set));
     for (int i = 0; i < DIRECT_MAPPED_NUM_SETS; i++)
     {
         result->cache_set[i].is_valid = 0;
@@ -128,6 +128,10 @@ unsigned int dmc_load_word(direct_mapped_cache* dmc, void* addr)
     return *mb_addr;
 }
 
+/**
+ * Free memory allocated to cache
+ * @param dmc: pointer to cache
+ */
 void dmc_free(direct_mapped_cache* dmc)
 {
     for (int i = 0; i < DIRECT_MAPPED_NUM_SETS; i++)

@@ -7,12 +7,19 @@
 #define FULLY_ASSOCIATIVE_NUM_WAYS 16
 #define FULLY_ASSOCIATIVE_NUM_WAYS_LN 4
 
+typedef struct fully_assoc_set
+{
+    int is_valid;
+    int is_dirty;
+    memory_block* mem_block;
+} fully_assoc_set;
+
 typedef struct fully_associative_cache
 {
     main_memory* mm;
     cache_stats cs;
-    
-    // TODO: add anything you need
+    int num_sets;
+    fully_assoc_set* cache_set;
 } fully_associative_cache;
 
 // Do not edit below this line
