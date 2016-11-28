@@ -60,12 +60,13 @@ void dmc_store_word(direct_mapped_cache* dmc, void* addr, unsigned int val)
     {
         // Write memory block to main memory if valid and dirty
         if (dmc->cache_set[index].is_valid == 1 && dmc->cache_set[index].is_dirty == 1)
-            mm_write(dmc->mm, mb_start_addr, dmc->cache_set[index].mem_block);
+            mm_write(dmc->mm, dmc->cache_set[index].mem_block->start_addr, dmc->cache_set[index].mem_block);
 
         // Load memory block from main memory
         memory_block* mb = mm_read(dmc->mm, mb_start_addr);
         dmc->cache_set[index].mem_block = mb;
         dmc->cache_set[index].is_valid = 1;
+        dmc->cache_set[index].is_dirty = 0;
 
         dmc->cs.w_misses++;
     }
@@ -104,13 +105,13 @@ unsigned int dmc_load_word(direct_mapped_cache* dmc, void* addr)
     {
         // Write memory block to main memory if valid and dirty
         if (dmc->cache_set[index].is_valid == 1 && dmc->cache_set[index].is_dirty == 1)
-            mm_write(dmc->mm, mb_start_addr, dmc->cache_set[index].mem_block);
+            mm_write(dmc->mm, dmc->cache_set[index].mem_block->start_addr, dmc->cache_set[index].mem_block);
 
         // Load memory block from main memory
         memory_block* mb = mm_read(dmc->mm, mb_start_addr);
         dmc->cache_set[index].mem_block = mb;
         dmc->cache_set[index].is_valid = 1;
-
+        dmc->cache_set[index].is_dirty = 0;
         dmc->cs.r_misses++;
     }
 
