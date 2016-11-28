@@ -64,6 +64,8 @@ void dmc_store_word(direct_mapped_cache* dmc, void* addr, unsigned int val)
 
         // Load memory block from main memory
         memory_block* mb = mm_read(dmc->mm, mb_start_addr);
+        mb_free(dmc->cache_set[index].mem_block);
+
         dmc->cache_set[index].mem_block = mb;
         dmc->cache_set[index].is_valid = 1;
         dmc->cache_set[index].is_dirty = 0;
@@ -109,6 +111,8 @@ unsigned int dmc_load_word(direct_mapped_cache* dmc, void* addr)
 
         // Load memory block from main memory
         memory_block* mb = mm_read(dmc->mm, mb_start_addr);
+        mb_free(dmc->cache_set[index].mem_block);
+
         dmc->cache_set[index].mem_block = mb;
         dmc->cache_set[index].is_valid = 1;
         dmc->cache_set[index].is_dirty = 0;
@@ -127,7 +131,7 @@ unsigned int dmc_load_word(direct_mapped_cache* dmc, void* addr)
 void dmc_free(direct_mapped_cache* dmc)
 {
     for (int i = 0; i < DIRECT_MAPPED_NUM_SETS; i++)
-        free(dmc->cache_set[i].mem_block);
+        mb_free(dmc->cache_set[i].mem_block);
 
     free(dmc->cache_set);
     free(dmc);
