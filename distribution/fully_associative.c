@@ -5,7 +5,7 @@
 #include "memory_block.h"
 #include "fully_associative.h"
 
-#define NEARING_OVERFLOW 35000
+#define NEARING_OVERFLOW 2147483640
 
 /**
  * Allocate memory and initialize cache
@@ -24,7 +24,13 @@ fully_associative_cache* fac_init(main_memory* mm)
     {
         result->cache_set[i].is_valid = 0;
         result->cache_set[i].is_dirty = 0;
+
+        // Initialize data with dummy values
         result->cache_set[i].mem_block = malloc(sizeof(memory_block));
+        result->cache_set[i].mem_block->data = NULL;
+        result->cache_set[i].mem_block->size = MAIN_MEMORY_BLOCK_SIZE;
+        result->cache_set[i].mem_block->start_addr = NULL;
+
         result->usage[i] = 0;
     }
     return result;
