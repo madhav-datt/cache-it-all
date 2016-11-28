@@ -1,4 +1,5 @@
 #include <stdint.h>
+#include <stdio.h>
 
 #include "memory_block.h"
 #include "direct_mapped.h"
@@ -30,7 +31,7 @@ direct_mapped_cache* dmc_init(main_memory* mm)
  */
 static int addr_to_set(void* addr)
 {
-    unsigned int result = (unsigned int) addr;
+    unsigned int result = (unsigned int) (uintptr_t) addr;
     return (result >> MAIN_MEMORY_BLOCK_SIZE_LN) & ((1 << DIRECT_MAPPED_NUM_SETS_LN) - 1);
 }
 
@@ -49,10 +50,10 @@ void dmc_store_word(direct_mapped_cache* dmc, void* addr, unsigned int val)
     void* mb_start_addr = addr - addr_offt;
 
     int index = addr_to_set(mb_start_addr);
-    int result = (int) mb_start_addr;
+    int result = (int) (uintptr_t) mb_start_addr;
     int tag = result >> (MAIN_MEMORY_BLOCK_SIZE_LN + DIRECT_MAPPED_NUM_SETS_LN);
-    int mem_addr_tag = ((int) dmc->cache_set[index].mem_block->start_addr)
-            >> (MAIN_MEMORY_BLOCK_SIZE_LN + DIRECT_MAPPED_NUM_SETS_LN);
+    int mem_addr_tag = (int) (((uintptr_t) dmc->cache_set[index].mem_block->start_addr)
+                >> (MAIN_MEMORY_BLOCK_SIZE_LN + DIRECT_MAPPED_NUM_SETS_LN));
 
     // Miss - Addr was not previously loaded into cache
     if (!(dmc->cache_set[index].is_valid == 1 && mem_addr_tag == tag))
@@ -66,7 +67,7 @@ void dmc_store_word(direct_mapped_cache* dmc, void* addr, unsigned int val)
         dmc->cache_set[index].mem_block = mb;
         dmc->cache_set[index].is_valid = 1;
 
-        dmc->cs.r_misses++;
+        dmc->cs.w_misses++;
     }
 
     // Extract required word care about
@@ -75,7 +76,7 @@ void dmc_store_word(direct_mapped_cache* dmc, void* addr, unsigned int val)
     dmc->cache_set[index].is_dirty = 1;
 
     // Update statistics
-    dmc->cs.r_queries++;
+    dmc->cs.w_queries++;
 }
 
 /**
@@ -85,7 +86,7 @@ void dmc_store_word(direct_mapped_cache* dmc, void* addr, unsigned int val)
  * @return val: data stored at addr
  */
 unsigned int dmc_load_word(direct_mapped_cache* dmc, void* addr)
-{   
+{
     // Check if read query is a miss
 
     // Pre-compute start address of memory block
@@ -93,10 +94,10 @@ unsigned int dmc_load_word(direct_mapped_cache* dmc, void* addr)
     void* mb_start_addr = addr - addr_offt;
 
     int index = addr_to_set(mb_start_addr);
-    int result = (int) mb_start_addr;
+    int result = (int) (uintptr_t) mb_start_addr;
     int tag = result >> (MAIN_MEMORY_BLOCK_SIZE_LN + DIRECT_MAPPED_NUM_SETS_LN);
-    int mem_addr_tag = ((int) dmc->cache_set[index].mem_block->start_addr)
-            >> (MAIN_MEMORY_BLOCK_SIZE_LN + DIRECT_MAPPED_NUM_SETS_LN);
+    int mem_addr_tag = (int) (((uintptr_t) dmc->cache_set[index].mem_block->start_addr)
+                >> (MAIN_MEMORY_BLOCK_SIZE_LN + DIRECT_MAPPED_NUM_SETS_LN));
 
     // Miss - Addr was not previously loaded into cache
     if (!(dmc->cache_set[index].is_valid == 1 && mem_addr_tag == tag))
