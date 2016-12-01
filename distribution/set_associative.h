@@ -9,12 +9,25 @@
 #define SET_ASSOCIATIVE_NUM_WAYS 2
 #define SET_ASSOCIATIVE_NUM_WAYS_LN 1
 
+typedef struct sac_map_way
+{
+    int is_valid;
+    int is_dirty;
+    memory_block* mem_block;
+} sac_map_way;
+
+typedef struct sac_map_set
+{
+    sac_map_way* ways;
+    int num_ways;
+    int* usage;
+} sac_map_set;
+
 typedef struct set_associative_cache
 {
     main_memory* mm;
     cache_stats cs;
-    
-    // TODO: add anything you need
+    sac_map_set* cache_set;
 } set_associative_cache;
 
 // Do not edit below this line
