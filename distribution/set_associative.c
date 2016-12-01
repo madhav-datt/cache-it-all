@@ -91,9 +91,9 @@ static int cmp(const void* a, const void* b)
 
 /**
  * Handle and eliminate potential LRU overflows
- * Change fac->usage values to small quantities while maintaining relative usage order
+ * Change sac->usage values to small quantities while maintaining relative usage order
  * (ie. least recently used, 2nd least recently used etc. are maintained)
- * @param fac: pointer to cache
+ * @param sac: pointer to cache
  * @param set_index: index of corresponding set for which lru is to be found
  */
 static void normalize_usage_count(set_associative_cache* sac, int set_index)
@@ -118,21 +118,22 @@ static void normalize_usage_count(set_associative_cache* sac, int set_index)
 
 /**
  * Find way number in case of hit
- * @param fac: pointer to cache
+ * @param sac: pointer to cache
  * @param mb_start_addr: start address of required memory block
+ * @param set_index: index of corresponding set for which lru is to be found
  * @return index (way number) if hit, -1 if miss
  */
-static int find_hit(fully_associative_cache* fac, void* mb_start_addr)
+static int find_hit(set_associative_cache* sac, void* mb_start_addr, int set_index)
 {
     int mem_block_tag = (int) (uintptr_t) mb_start_addr;
     mem_block_tag = mem_block_tag >> MAIN_MEMORY_BLOCK_SIZE_LN;
 
     // Compare tag against all memory blocks currently filled into ways
-    for (int i = 0; i < fac->num_sets; i++)
+    for (int i = 0; i < sac->cache_set[set_index].num_ways; i++)
     {
-        int current_addr = (int) (uintptr_t) fac->cache_set[i].mem_block->start_addr;
+        int current_addr = (int) (uintptr_t) sac->cache_set[set_index].ways[i].mem_block->start_addr;
         int current_tag = current_addr >> MAIN_MEMORY_BLOCK_SIZE_LN;
-        if (fac->cache_set[i].is_valid == 1 && current_tag == mem_block_tag)
+        if (sac->cache_set[set_index].ways[i].is_valid == 1 && current_tag == mem_block_tag)
             return i;
     }
     return -1;
@@ -148,6 +149,7 @@ unsigned int sac_load_word(set_associative_cache* sac, void* addr)
 {
     // TODO
     return 0;
+
 }
 
 /**
