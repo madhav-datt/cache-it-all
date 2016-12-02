@@ -36,7 +36,6 @@ fully_associative_cache* fac_init(main_memory* mm)
     return result;
 }
 
-
 /**
  * Find least recently used memory block for eviction
  * @param fac: pointer to cache
