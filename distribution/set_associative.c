@@ -126,25 +126,74 @@ static void normalize_usage_count(set_associative_cache* sac, int set_index)
 static int find_hit(set_associative_cache* sac, void* mb_start_addr, int set_index)
 {
     int mem_block_tag = (int) (uintptr_t) mb_start_addr;
-    mem_block_tag = mem_block_tag >> MAIN_MEMORY_BLOCK_SIZE_LN;
+    mem_block_tag = mem_block_tag >> (MAIN_MEMORY_BLOCK_SIZE_LN + SET_ASSOCIATIVE_NUM_SETS_LN);
 
     // Compare tag against all memory blocks currently filled into ways
     for (int i = 0; i < sac->cache_set[set_index].num_ways; i++)
     {
         int current_addr = (int) (uintptr_t) sac->cache_set[set_index].ways[i].mem_block->start_addr;
-        int current_tag = current_addr >> MAIN_MEMORY_BLOCK_SIZE_LN;
+        int current_tag = current_addr >> (MAIN_MEMORY_BLOCK_SIZE_LN + SET_ASSOCIATIVE_NUM_SETS_LN);
         if (sac->cache_set[set_index].ways[i].is_valid == 1 && current_tag == mem_block_tag)
             return i;
     }
     return -1;
 }
 
+/**
+ * Store val at addr (write query)
+ * @param sac: pointer to cache
+ * @param addr: address where data is to be stored (always properly aligned)
+ * @param val: data
+ */
 void sac_store_word(set_associative_cache* sac, void* addr, unsigned int val)
 {
-    // TODO
+    // Check if read query is a miss
+
+    // Pre-compute start address of memory block
+    size_t addr_offt = (size_t) (addr - MAIN_MEMORY_START_ADDR) % MAIN_MEMORY_BLOCK_SIZE;
+    void* mb_start_addr = addr - addr_offt;
+
+    int set_index = addr_to_set(mb_start_addr);
+    int way_index = find_hit(sac, mb_start_addr, set_index);
+
+    // Miss - Addr was not previously loaded into cache
+    if (way_index == -1)
+    {
+        // Get least recently used way
+        way_index = lru(sac, set_index);
+
+        // Write memory block to main memory if valid and dirty
+        if (sac->cache_set[set_index].ways[way_index].is_valid == 1 &&
+                sac->cache_set[set_index].ways[way_index].is_dirty == 1)
+            mm_write(sac->mm, sac->cache_set[set_index].ways[way_index].mem_block->start_addr,
+                     sac->cache_set[set_index].ways[way_index].mem_block);
+
+        // Load memory block from main memory
+        memory_block* mb = mm_read(sac->mm, mb_start_addr);
+        mb_free(sac->cache_set[set_index].ways[way_index].mem_block);
+
+        sac->cache_set[set_index].ways[way_index].mem_block = mb;
+        sac->cache_set[set_index].ways[way_index].is_valid = 1;
+        sac->cache_set[set_index].ways[way_index].is_dirty = 0;
+
+        sac->cs.w_misses++;
+    }
+
+    // Extract required word care about
+    unsigned int* mb_addr = sac->cache_set[set_index].ways[way_index].mem_block->data + addr_offt;
+    *mb_addr = val;
+    sac->cache_set[set_index].ways[way_index].is_dirty = 1;
+
+    // Update statistics
+    sac->cs.w_queries++;
 }
 
-
+/**
+ * Read value at addr (read query)
+ * @param sac: pointer to cache
+ * @param addr: address where data is stored
+ * @return val: data stored at addr
+ */
 unsigned int sac_load_word(set_associative_cache* sac, void* addr)
 {
     // TODO
