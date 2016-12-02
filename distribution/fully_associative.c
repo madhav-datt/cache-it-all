@@ -214,6 +214,7 @@ unsigned int fac_load_word(fully_associative_cache* fac, void* addr)
         fac->cache_set[index].mem_block = mb;
         fac->cache_set[index].is_valid = 1;
         fac->cache_set[index].is_dirty = 0;
+
         fac->cs.r_misses++;
     }
 

@@ -4,6 +4,8 @@
 #include "memory_block.h"
 #include "set_associative.h"
 
+#define NEARING_OVERFLOW 2147483640
+
 /**
  * Allocate memory and initialize cache
  * @param mm: main memory
@@ -184,8 +186,17 @@ void sac_store_word(set_associative_cache* sac, void* addr, unsigned int val)
     *mb_addr = val;
     sac->cache_set[set_index].ways[way_index].is_dirty = 1;
 
+    sac->cache_set[set_index].usage[way_index] = 0;
+    for (int i = 0; i < sac->cache_set[set_index].num_ways; i++)
+        if (i != way_index)
+            sac->cache_set[set_index].usage[i]++;
+
     // Update statistics
     sac->cs.w_queries++;
+
+    // Normalize and adjust to eliminate potential overflows every NEARING_OVERFLOW queries
+    if ((sac->cs.w_queries + sac->cs.r_queries) % NEARING_OVERFLOW == 0)
+        normalize_usage_count(sac, set_index);
 }
 
 /**
@@ -196,9 +207,54 @@ void sac_store_word(set_associative_cache* sac, void* addr, unsigned int val)
  */
 unsigned int sac_load_word(set_associative_cache* sac, void* addr)
 {
-    // TODO
-    return 0;
+// Check if read query is a miss
 
+    // Pre-compute start address of memory block
+    size_t addr_offt = (size_t) (addr - MAIN_MEMORY_START_ADDR) % MAIN_MEMORY_BLOCK_SIZE;
+    void* mb_start_addr = addr - addr_offt;
+
+    int set_index = addr_to_set(mb_start_addr);
+    int way_index = find_hit(sac, mb_start_addr, set_index);
+
+    // Miss - Addr was not previously loaded into cache
+    if (way_index == -1)
+    {
+        // Get least recently used way
+        way_index = lru(sac, set_index);
+
+        // Write memory block to main memory if valid and dirty
+        if (sac->cache_set[set_index].ways[way_index].is_valid == 1 &&
+            sac->cache_set[set_index].ways[way_index].is_dirty == 1)
+            mm_write(sac->mm, sac->cache_set[set_index].ways[way_index].mem_block->start_addr,
+                     sac->cache_set[set_index].ways[way_index].mem_block);
+
+        // Load memory block from main memory
+        memory_block* mb = mm_read(sac->mm, mb_start_addr);
+        mb_free(sac->cache_set[set_index].ways[way_index].mem_block);
+
+        sac->cache_set[set_index].ways[way_index].mem_block = mb;
+        sac->cache_set[set_index].ways[way_index].is_valid = 1;
+        sac->cache_set[set_index].ways[way_index].is_dirty = 0;
+
+        sac->cs.r_misses++;
+    }
+
+    // Extract required word care about
+    unsigned int* mb_addr = sac->cache_set[set_index].ways[way_index].mem_block->data + addr_offt;
+
+    sac->cache_set[set_index].usage[way_index] = 0;
+    for (int i = 0; i < sac->cache_set[set_index].num_ways; i++)
+        if (i != way_index)
+            sac->cache_set[set_index].usage[i]++;
+
+    // Update statistics
+    sac->cs.r_queries++;
+
+    // Normalize and adjust to eliminate potential overflows every NEARING_OVERFLOW queries
+    if ((sac->cs.w_queries + sac->cs.r_queries) % NEARING_OVERFLOW == 0)
+        normalize_usage_count(sac, set_index);
+
+    return *mb_addr;
 }
 
 /**
