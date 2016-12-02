@@ -20,7 +20,7 @@ typedef struct fully_associative_cache
     cache_stats cs;
     int num_sets;
     fully_assoc_set* cache_set;
-    int* usage;
+    float* usage;
 } fully_associative_cache;
 
 // Do not edit below this line

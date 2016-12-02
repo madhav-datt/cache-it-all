@@ -62,7 +62,7 @@ static int lru(set_associative_cache* sac, int set_index)
         return sac->cache_set[set_index].num_ways++;
 
     int max_index = 0;
-    int max_value = sac->cache_set[set_index].usage[0];
+    float max_value = sac->cache_set[set_index].usage[0];
 
     for (int i = 0; i < SET_ASSOCIATIVE_NUM_WAYS; i++)
     {
@@ -76,46 +76,17 @@ static int lru(set_associative_cache* sac, int set_index)
 }
 
 /**
- * Custom comparator to sort indices of usage array fac->usage, such that index (i) corresponding to maximum
- * fac->usage[i] value is first in the sorted order
- * @param a: parameter 1
- * @param b: parameter 2
- * @return Comparison between parameters a and b
- */
-// array contains a copy of fac->usage[i]
-static int* array;
-static int cmp(const void* a, const void* b)
-{
-    int ia = *(int*) a;
-    int ib = *(int*) b;
-    return array[ia] < array[ib] ? -1 : array[ia] > array[ib];
-}
-
-/**
  * Handle and eliminate potential LRU overflows
- * Change sac->usage values to small quantities while maintaining relative usage order
+ * Change sac->usage values to smaller, scaled down quantities while maintaining relative usage order
  * (ie. least recently used, 2nd least recently used etc. are maintained)
  * @param sac: pointer to cache
  * @param set_index: index of corresponding set for which lru is to be found
  */
 static void normalize_usage_count(set_associative_cache* sac, int set_index)
 {
-    // Create array of indices for sorting according to cmp
-    int* index = malloc(sac->cache_set[set_index].num_ways * sizeof(int));
-    for(int i = 0; i < sac->cache_set[set_index].num_ways; i++)
-        index[i] = i;
-
-    // Sort indices of usage array fac->usage, such that index (i) corresponding to maximum fac->usage[i] value
-    // is first in the sorted order
-    array = sac->cache_set[set_index].usage;
-    qsort(index, (size_t) sac->cache_set[set_index].num_ways, sizeof(*index), cmp);
-
-    // Change fac->usage values to small quantities while maintaining relative usage order
-    int num_usages_least = sac->cache_set[set_index].num_ways + 1;
+    // Change fac->usage values to smaller, scaled quantities while maintaining relative usage order
     for (int i = 0; i < sac->cache_set[set_index].num_ways; i++)
-        sac->cache_set[set_index].usage[index[i]] = num_usages_least--;
-
-    free(index);
+        sac->cache_set[set_index].usage[i] /= 2;
 }
 
 /**

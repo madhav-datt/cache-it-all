@@ -20,7 +20,7 @@ typedef struct sac_map_set
 {
     sac_map_way* ways;
     int num_ways;
-    int* usage;
+    float* usage;
 } sac_map_set;
 
 typedef struct set_associative_cache

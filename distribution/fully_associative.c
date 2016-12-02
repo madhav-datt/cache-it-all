@@ -49,7 +49,7 @@ static int lru(fully_associative_cache* fac)
         return fac->num_sets++;
 
     int max_index = 0;
-    int max_value = fac->usage[0];
+    float max_value = fac->usage[0];
 
     for (int i = 0; i < FULLY_ASSOCIATIVE_NUM_WAYS; i++)
     {
@@ -63,45 +63,15 @@ static int lru(fully_associative_cache* fac)
 }
 
 /**
- * Custom comparator to sort indices of usage array fac->usage, such that index (i) corresponding to maximum
- * fac->usage[i] value is first in the sorted order
- * @param a: parameter 1
- * @param b: parameter 2
- * @return Comparison between parameters a and b
- */
-// array contains a copy of fac->usage[i]
-static int* array;
-static int cmp(const void* a, const void* b)
-{
-    int ia = *(int*) a;
-    int ib = *(int*) b;
-    return array[ia] < array[ib] ? -1 : array[ia] > array[ib];
-}
-
-/**
  * Handle and eliminate potential LRU overflows
- * Change fac->usage values to small quantities while maintaining relative usage order
+ * Change fac->usage values to smaller, scaled down quantities while maintaining relative usage order
  * (ie. least recently used, 2nd least recently used etc. are maintained)
  * @param fac: pointer to cache
  */
 static void normalize_usage_count(fully_associative_cache* fac)
 {
-    // Create array of indices for sorting according to cmp
-    int* index = malloc(fac->num_sets * sizeof(int));
-    for(int i = 0; i < fac->num_sets; i++)
-        index[i] = i;
-
-    // Sort indices of usage array fac->usage, such that index (i) corresponding to maximum fac->usage[i] value
-    // is first in the sorted order
-    array = fac->usage;
-    qsort(index, (size_t) fac->num_sets, sizeof(*index), cmp);
-
-    // Change fac->usage values to small quantities while maintaining relative usage order
-    int num_usages_least = fac->num_sets + 1;
     for (int i = 0; i < fac->num_sets; i++)
-        fac->usage[index[i]] = num_usages_least--;
-
-    free(index);
+        fac->usage[i] /= 2;
 }
 
 /**
