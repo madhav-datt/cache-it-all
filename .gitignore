@@ -38,3 +38,13 @@ cmake-*
 # Debug files
 *.dSYM/
 *.su
+
+# Cmake files
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Makefile
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+cmake-build-debug/*
