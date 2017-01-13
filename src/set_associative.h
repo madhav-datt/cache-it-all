@@ -30,8 +30,6 @@ typedef struct set_associative_cache
     sac_map_set* cache_set;
 } set_associative_cache;
 
-// Do not edit below this line
-
 set_associative_cache* sac_init(main_memory* mm);
 
 void sac_store_word(set_associative_cache* sac, void* addr, unsigned int val);
