@@ -21,8 +21,6 @@ typedef struct direct_mapped_cache
     direct_map_set* cache_set;
 } direct_mapped_cache;
 
-// Do not edit below this line
-
 direct_mapped_cache* dmc_init(main_memory* mm);
 
 void dmc_store_word(direct_mapped_cache* dmc, void* addr, unsigned int val);
