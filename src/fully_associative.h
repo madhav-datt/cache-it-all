@@ -23,8 +23,6 @@ typedef struct fully_associative_cache
     float* usage;
 } fully_associative_cache;
 
-// Do not edit below this line
-
 fully_associative_cache* fac_init(main_memory* mm);
 
 void fac_store_word(fully_associative_cache* fac, void* addr, unsigned int val);
